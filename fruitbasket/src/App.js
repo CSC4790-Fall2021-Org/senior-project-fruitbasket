@@ -9,7 +9,7 @@ const Header = () => {
         <
         div class = "col-md-12 centered" >
         <
-        img src = "https://cdn2.iconfinder.com/data/icons/food-vol-2-1/96/096-512.png"
+        img src = "./../resources/logo.png"
         height = "100"
         width = "100" / >
         <
