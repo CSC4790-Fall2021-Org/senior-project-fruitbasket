@@ -42,6 +42,8 @@ const Header = () => {
   )
 }
 
+
+
 function CardSystem () {
 	const characters = db
 	return(
