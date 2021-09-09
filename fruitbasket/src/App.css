@@ -38,8 +38,23 @@
 }
 
 .centered {
-    height: 20vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.cards {
+    position: absolute;
+    height: 300px;
+    width: 260px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    left: 50%;
+    background-repeat:no-repeat;
+    transform: translate(-50%, -50%);
+}
+
