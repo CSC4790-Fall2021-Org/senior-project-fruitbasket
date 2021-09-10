@@ -1,6 +1,8 @@
 import './App.css';
 import logo from './logo.png';
 import TinderCard from 'react-tinder-card'
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
 
 const db = [
 	{
@@ -27,20 +29,39 @@ const db = [
 
 const Header = () => {
   return (
-		<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12 centered">
-			<img src={logo} height="100" width ="100"/>
-		</div>
+	<div>
+		<Container fluid>
+			<Container>
+				<img src={logo} height="100" width ="100"/>
+			</Container>
+
+			<Container>
+				<h1> FRUITBASKET </h1>
+			</Container>
+		</Container>
+
+		<Nav justify variant="tabs" defaultActiveKey="/home">
+			<Nav.Item>
+    			<Nav.Link href="link-0">Discover</Nav.Link>
+			</Nav.Item>
+
+			<Nav.Item>
+    			<Nav.Link eventKey="link-1">Likes</Nav.Link>
+  			</Nav.Item>
+
+  			<Nav.Item>
+    			<Nav.Link eventKey="link-2">Messages</Nav.Link>
+  			</Nav.Item>
+
+  			<Nav.Item>
+    			<Nav.Link eventKey="Link-3">Profile</Nav.Link>
+  			</Nav.Item>
+		</Nav>
 	</div>
-	<div class="row">
-		<div class="col-md-12 centered">
-			<h1> FRUITBASKET </h1>
-		</div>
-	</div>
-</div>
   )
 }
+
+
 
 function CardSystem () {
 	const characters = db
