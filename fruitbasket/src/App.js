@@ -1,35 +1,32 @@
 import "./App.css";
 import logo from "./logo.png";
-import Nav from "react-bootstrap/Nav";
+import Tabs from "react-bootstrap/Tabs";
+import Tab from "react-bootstrap/Tab";
 import Container from "react-bootstrap/Container";
+import Profile from "./profile";
 
 const Header = () => {
   return (
-      <><Container fluid>
-		  <Container>
-			  <img src={logo} height="100" width="100" />
-		  </Container>
+    <>
+      <Container fluid>
+        <Container>
+          <img src={logo} height="100" width="100" />
+        </Container>
 
-		  <Container>
-			  <h1> FRUITBASKET </h1>
-		  </Container>
-	  </Container><Nav justify variant="tabs" defaultActiveKey="/home">
-			  <Nav.Item>
-				  <Nav.Link href="link-0">Discover</Nav.Link>
-			  </Nav.Item>
+        <Container>
+          <h1> FRUITBASKET </h1>
+        </Container>
+      </Container>
 
-			  <Nav.Item>
-				  <Nav.Link eventKey="link-1">Likes</Nav.Link>
-			  </Nav.Item>
-
-			  <Nav.Item>
-				  <Nav.Link eventKey="link-2">Messages</Nav.Link>
-			  </Nav.Item>
-
-			  <Nav.Item>
-				  <Nav.Link eventKey="Link-3">Profile</Nav.Link>
-			  </Nav.Item>
-		  </Nav></>
+      <Tabs justify defaultActiveKey="Discover" id="home-nav" className="mb-3">
+        <Tab eventKey="Discover" title="Discover"></Tab>
+        <Tab eventKey="Likes" title="Likes"></Tab>
+        <Tab eventKey="Messages" title="Messages"></Tab>
+        <Tab eventKey="Profile" title="Profile">
+          <Profile></Profile>
+        </Tab>
+      </Tabs>
+    </>
   );
 };
 
