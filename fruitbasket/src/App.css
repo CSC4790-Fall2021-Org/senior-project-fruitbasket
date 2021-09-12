@@ -57,3 +57,8 @@
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
 }
+
+.header {
+  background-color: #F5D88F;
+  height: 198px;
+}
