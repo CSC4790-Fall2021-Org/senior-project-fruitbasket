@@ -2,6 +2,7 @@ import "./profile.css";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import Container from "react-bootstrap/Container";
+import Service from "./service.js"
 
 const Profile = () => {
     return(
