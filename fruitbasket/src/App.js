@@ -4,6 +4,7 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import Container from "react-bootstrap/Container";
 import Profile from "./profile";
+import Basket from "./Basket"
 
 const Header = () => {
   return (
@@ -24,6 +25,9 @@ const Header = () => {
         <Tab eventKey="Messages" title="Messages"></Tab>
         <Tab eventKey="Profile" title="Profile">
           <Profile></Profile>
+        </Tab>
+        <Tab eventKey="Fruit Baskets" title="Fruit Baskets">
+          <Basket></Basket>
         </Tab>
       </Tabs>
     </>
