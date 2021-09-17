@@ -1,6 +1,5 @@
 import "./profile.css";
 
-
 const Profile = () => {
     return(
         <div>
@@ -8,5 +7,6 @@ const Profile = () => {
         </div>
     );
 };
+
 
 export default Profile
