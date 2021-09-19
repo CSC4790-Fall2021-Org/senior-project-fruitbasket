@@ -25,14 +25,15 @@ const Header = () => {
           <Explore></Explore>
         </Tab>
           
-        <Tab eventKey="Likes" title="Likes"></Tab>
+        <Tab eventKey="Matches" title="Matches"></Tab>
         <Tab eventKey="Messages" title="Messages"></Tab>
+        <Tab eventKey="Fruit Baskets" title="Fruit Baskets">
+          <Group></Group>
+        </Tab>
         <Tab eventKey="Profile" title="Profile">
           <Profile></Profile>
         </Tab>
-        <Tab eventKey="Group" title="Group">
-          <Group></Group>
-        </Tab>
+        
       </Tabs>
       </div>
     </>
