@@ -2,12 +2,6 @@ import "./profile.css";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import Container from "react-bootstrap/Container";
-import db from './firebase'
-import { getDatabase, ref } from "firebase/database";
-
-//const database = getDatabase(db)
-//const userRef = ref("/userid")
-
 
 const Profile = () => {
     return(
@@ -25,7 +19,5 @@ const Profile = () => {
         </>
     );
 };
-
-
 
 export default Profile
