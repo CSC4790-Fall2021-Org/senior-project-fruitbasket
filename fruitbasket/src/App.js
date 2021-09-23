@@ -12,17 +12,17 @@ const Header = () => {
     <>
       <div className="header">
       <Container fluid>
-        <Container>
+        <Container className="text-center">
           <img src={logo} height="100" width="100" />
         </Container>
 
         <Container>
-          <h1> FRUITBASKET </h1>
+          <h1 className="text-center"> FRUITBASKET </h1>
         </Container>
       </Container>
 
-      <Tabs justify defaultActiveKey="Explore" id="home-nav" className="mb-3">
-        <Tab eventKey="Explore" title="Explore">
+      <Tabs justify defaultActiveKey="Explore" id="home-nav" className="mb-3 navbarmain">
+        <Tab eventKey="Explore" title="Explore" className="exploretab">
           <Explore></Explore>
         </Tab>
           

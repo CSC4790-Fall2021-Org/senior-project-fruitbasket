@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  
 }
 
 .App-logo {
@@ -59,7 +59,11 @@
 }
 
 .header {
-  background-color: #F5D88F;
+  background-color: white;
   height: 198px;
+}
+
+.exploretab{
+  background-color: white;
 }
 

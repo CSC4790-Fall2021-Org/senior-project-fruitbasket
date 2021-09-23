@@ -1,7 +1,7 @@
 import "./explore.css";
-import "./profile.css";
 import Container from "react-bootstrap/Container";
 import Carousel from "react-bootstrap/Carousel"
+import Button from "react-bootstrap/Button"
 
 const Explore = () => {
     return(
@@ -11,7 +11,13 @@ const Explore = () => {
         </Container>
         
         <Container className="block-example border border-dark rounded shadow-lg">
-        <h1> Name </h1>
+
+        <Container className="d-flex justify-content-around">
+         First Name Last Name
+        <Button className="rounded-pill"> PASS </Button>
+        <Button className="rounded-pill"> LIKE </Button>
+        </Container>
+
         <Carousel>
             
             <Carousel.Item interval={1000}>

@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 const Profile = () => {
     return(
         <>
-        <Container>
+        <Container className="profile">
             <h1> Profile</h1>
         </Container>
         <Tabs justify defaultActiveKey="Create" id="home-nav" className="mb-3">
