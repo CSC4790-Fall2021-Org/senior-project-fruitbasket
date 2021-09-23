@@ -14,7 +14,7 @@ import Button from 'react-bootstrap/Button'
 const BasketUI = () => {
     return(
         <div>
-            <h1>Invites</h1>
+            <Button variant="outline-warning">Basket Join Requests</Button>{' '}
         </div>
     );
 };
