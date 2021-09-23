@@ -6,7 +6,6 @@ import Container from "react-bootstrap/Container";
 import Profile from "./profile";
 import Explore from "./explore";
 import Group from "./Group"
-import background from "./test-backgrounds/1.svg";
 
 const Header = () => {
   return (
@@ -45,9 +44,7 @@ const Header = () => {
 function App() {
   return (
     <Container className="App">
-      <div style={{ backgroundImage: `url(${background})` }}>
         <Header />
-      </div>
     </Container>
   );
 }
