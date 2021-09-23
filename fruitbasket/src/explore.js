@@ -6,13 +6,13 @@ import Button from "react-bootstrap/Button"
 const Explore = () => {
     return(
         <>
-        <Container>
-            <h1> Profile</h1>
+        <Container className="text-center p-3">
+            <h1> Recommended For You</h1>
         </Container>
         
         <Container className="block-example border border-dark rounded shadow-lg">
 
-        <Container className="d-flex justify-content-around mt-5">
+        <Container className="d-flex justify-content-around mt-5 profileheader">
          First Name Last Name
         <Button className="rounded-pill" size="lg"> PASS </Button>
         <Button className="rounded-pill" size="lg"> LIKE </Button>
