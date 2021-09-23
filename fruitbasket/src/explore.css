@@ -24,11 +24,11 @@
 }
 
 .b1 {
-  list-style-image: url(http://upload.wikimedia.org/wikipedia/commons/1/19/Icons-mini-icon_attachment.gif);
+  list-style-image: url(./icons/person-fill.svg);
 }
 .b2 {
-  list-style-image: url(http://upload.wikimedia.org/wikipedia/commons/6/61/Icons-mini-icon_security.gif);
+  list-style-image: url(./icons/eye-fill.svg);
 }
 .b3 {
-  list-style-image: url(http://upload.wikimedia.org/wikipedia/commons/a/ab/Icons-mini-icon_clock.gif);
+  list-style-image: url(./icons/house-door-fill.svg);
 }
