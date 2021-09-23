@@ -22,3 +22,13 @@
   height:70px;
   border-radius: 25px !important;
 }
+
+.b1 {
+  list-style-image: url(http://upload.wikimedia.org/wikipedia/commons/1/19/Icons-mini-icon_attachment.gif);
+}
+.b2 {
+  list-style-image: url(http://upload.wikimedia.org/wikipedia/commons/6/61/Icons-mini-icon_security.gif);
+}
+.b3 {
+  list-style-image: url(http://upload.wikimedia.org/wikipedia/commons/a/ab/Icons-mini-icon_clock.gif);
+}
