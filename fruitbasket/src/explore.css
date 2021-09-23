@@ -3,3 +3,8 @@
     height: 500px;
     background-color:#F7F6F4;
   }
+
+.explorecarousel{
+  height: 500px;
+  overflow: hidden;
+}
