@@ -1,12 +1,23 @@
 import "./explore.css";
+import "./profile.css";
+import Tabs from "react-bootstrap/Tabs";
+import Tab from "react-bootstrap/Tab";
+import Container from "react-bootstrap/Container";
+
 const Explore = () => {
     return(
-        <div className="app">
-            <h1> Recommended for you </h1>
-            <div className="profile">Will insert profile here</div>
-        </div>
-
-
+        <>
+        <Container>
+            <h1> Profile</h1>
+        </Container>
+        <Tabs justify defaultActiveKey="Create" id="home-nav" className="mb-3">
+          <Tab eventKey="Create" title="Create"></Tab>
+          <Tab eventKey="Read" title="Read"></Tab>
+          <Tab eventKey="Update" title="Update"></Tab>
+          <Tab eventKey="Delete" title="Delete">
+          </Tab>
+        </Tabs>
+        </>
     );
 };
 

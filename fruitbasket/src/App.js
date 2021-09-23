@@ -1,5 +1,5 @@
 import "./App.css";
-import logo from "./logo.png";
+import logo from "./fruits.svg";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import Container from "react-bootstrap/Container";
