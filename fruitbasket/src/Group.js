@@ -14,44 +14,51 @@ import React from 'react';
 class Group extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {date: new Date()};
+        this.state = { showing: true };
       }
     
     render() {
+        const { showing } = this.state;
         return(
         <div>
-            <Row xs={1} md={2} className="g-4">
-                {Array.from({ length: 4 }).map((_, idx) => (
-                <Col>
+            {showing ?
+            <div>
+                <Row xs={1} md={2} className="g-4">
+                    {Array.from({ length: 4 }).map((_, idx) => (
+                    <Col>
 
-                <Router>
-                    <Link to={'/basket'}>
-                        <Card hoverable>
-                            <Card.Img variant="top" src="https://media.istockphoto.com/photos/multi_ethnic-teenagers-taking-a-self-portrait-stock-photo-picture-id1184216653?k=20&m=1184216653&s=612x612&w=0&h=T6xt_a6r-fmG0l3dzX-EHbVPQkJQeY-VX4zb7skIbPQ=" />
-                            <Card.Body>
-                            <Card.Title>Fruit Basket name</Card.Title>
-                            <Card.Text>
-                                Members of the Fruit Basket
-                            </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Link>
+                    <Router>
+                        <Link to={'/basket'} onClick={() => this.setState({ showing: !showing })}>   
+                            <Card hoverable>
+                                <Card.Img variant="top" src="https://media.istockphoto.com/photos/multi_ethnic-teenagers-taking-a-self-portrait-stock-photo-picture-id1184216653?k=20&m=1184216653&s=612x612&w=0&h=T6xt_a6r-fmG0l3dzX-EHbVPQkJQeY-VX4zb7skIbPQ=" />
+                                <Card.Body>
+                                <Card.Title>Fruit Basket name</Card.Title>
+                                <Card.Text>
+                                    Members of the Fruit Basket
+                                </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Link>
 
-                    <Switch>
-                        <Route path="/basket">
-                            <BasketUI />
-                        </Route>
-                    </Switch>
-                </Router>
-                </Col>
-                    ))}
-            </Row>
-            <h1>Invites</h1>
+                        <Switch>
+                            <Route path="/basket">
+                                <BasketUI />
+                            </Route>
+                        </Switch>
+                    </Router>
+                    </Col>
+                        ))}
+                </Row>
+            </div>
+            : null
+            }
+            
         </div>
         );
         };
     }
 
 //route to the fruit basket (write api get request that returns data of the people within the fruit basket)
+
 
 export default Group
