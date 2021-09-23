@@ -19,4 +19,6 @@
 
 .like-button{
   font-size: 25px !important;
+  height:70px;
+  border-radius: 25px !important;
 }
