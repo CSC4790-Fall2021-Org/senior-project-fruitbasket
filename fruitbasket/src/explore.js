@@ -4,6 +4,7 @@ import Carousel from "react-bootstrap/Carousel"
 import Button from "react-bootstrap/Button"
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { useCallback } from "react";
 
 const Explore = () => {
     return(
@@ -69,21 +70,21 @@ const Explore = () => {
                     </Col>
 
                     <Col sm={4} className="pl-2">
-                    <p>
+                    <ul>
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                     
                         </svg>
                         Woman | Straight | Monogamous
-                    </p>
+                    </ul>
 
-                    <p>
+                    <ul>
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                     <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
                     <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
                     </svg>
                     Looking for Short-term dating | Long-term dating
-                    </p>
+                    </ul>
 
                     <p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
