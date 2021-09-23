@@ -1,7 +1,5 @@
 import "./explore.css";
 import "./profile.css";
-import Tabs from "react-bootstrap/Tabs";
-import Tab from "react-bootstrap/Tab";
 import Container from "react-bootstrap/Container";
 import Carousel from "react-bootstrap/Carousel"
 
