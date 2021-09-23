@@ -12,7 +12,7 @@ const Explore = () => {
             <h1> Profile</h1>
         </Container>
         
-        <Container className="block-example border border-dark">
+        <Container className="block-example border border-dark rounded shadow-lg">
         <h1> Name </h1>
         <Carousel>
             
@@ -40,7 +40,7 @@ const Explore = () => {
                 />
             </Carousel.Item>
             </Carousel>
-            
+
         </Container>
         </>
     );
