@@ -15,12 +15,11 @@ const Likes = () => {
         <div>
             <CardGroup>
                 <Card>
-                    <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3VDmRsVY5y8bLzeM-W9uXIUf9b6K724x2Hg&usqp=CAU" />
+                    <Card.Img variant="top" src="https://www.looper.com/img/gallery/things-only-adults-notice-in-shrek/intro-1573597941.jpg" />
                     <Card.Body>
                     <Card.Title>John Quimbo</Card.Title>
                     <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
+                        You know donkey things are more than they seem.
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
@@ -28,12 +27,11 @@ const Likes = () => {
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://i.pinimg.com/originals/83/ae/96/83ae968fd951fc4860125f4371e21af0.png" />
+                    <Card.Img variant="top" src="https://www.looper.com/img/gallery/things-only-adults-notice-in-shrek/intro-1573597941.jpg" />
                     <Card.Body>
                     <Card.Title>Mason Cooper</Card.Title>
                     <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
-                        content.{' '}
+                        Ogres are like onions. Onions have layers. Ogres have layers{' '}
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
@@ -41,13 +39,11 @@ const Likes = () => {
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://d3r15i91mdrm4u.cloudfront.net/images/2020/6/9/Cunningham4.jpg" />
+                    <Card.Img variant="top" src="https://www.looper.com/img/gallery/things-only-adults-notice-in-shrek/intro-1573597941.jpg" />
                     <Card.Body>
                     <Card.Title>Malik Cunningham</Card.Title>
                     <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
+                        What are you doing in my swamp?!
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
