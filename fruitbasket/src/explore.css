@@ -32,3 +32,8 @@
 .b3 {
   list-style-image: url(./icons/house-door-fill.svg);
 }
+
+.rightbody{
+  font-size: 20px;
+  line-height: 200%;
+}

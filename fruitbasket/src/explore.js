@@ -83,7 +83,7 @@ const Explore = () => {
 
                     <Col sm={4} className="pl-2">
                     
-                    <ul>
+                    <ul className="rightbody pt-5">
                         <li class="b1">
                         Woman | Straight | Monogamous
                         </li>
