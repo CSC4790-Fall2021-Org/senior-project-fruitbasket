@@ -17,6 +17,10 @@ class Group extends React.Component {
         super(props);
         this.state = { showing: true };
       }
+
+    buttonClick(){
+        this.setState({ showing: true })
+    }
     
     render() {
         const { showing } = this.state;
@@ -51,6 +55,7 @@ class Group extends React.Component {
             {!showing ?
                 <div>
                     <Button variant="primary" onClick={() => this.setState({ showing: true })}>Back to Baskets</Button>{' '}
+                    <Button variant="outline-warning">Basket Join Requests</Button>{' '}
                     <BasketUI></BasketUI>
                 </div>
             : null
@@ -58,6 +63,7 @@ class Group extends React.Component {
         </div>
         );
         };
+        
     }
 
 //route to the fruit basket (write api get request that returns data of the people within the fruit basket)

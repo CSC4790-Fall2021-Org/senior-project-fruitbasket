@@ -19,12 +19,12 @@ import {
   MessageInput,
 } from "@chatscope/chat-ui-kit-react";
 import MessagingUI from "./MessagingUI";
+import Group from "./Group";
 
 
 const BasketUI = () => {
     return(
         <div>
-            <Button variant="outline-warning">Basket Join Requests</Button>{' '}
             <MessagingUI></MessagingUI>
         </div>
     );
