@@ -13,7 +13,7 @@ const Explore = () => {
         <Container className="block-example border border-dark rounded shadow-lg">
 
         <Container className="d-flex justify-content-around mt-5 profileheader">
-         First Name Last Name
+         John Smith | Age 79 | Villanova, PA
         <Button className="rounded-pill" size="lg"> PASS </Button>
         <Button className="rounded-pill" size="lg"> LIKE </Button>
         </Container>
@@ -39,7 +39,7 @@ const Explore = () => {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://media.istockphoto.com/photos/business-man-pushing-large-stone-up-to-hill-business-heavy-tasks-and-picture-id825383494?k=20&m=825383494&s=612x612&w=0&h=tEqZ5HFZcM3lmDm_cmI7hOeceiqy9gYrkyLTTkrXdY4="
+                src="https://play-lh.googleusercontent.com/proxy/2tj1HTTkxfLUCHMYCMY7Ik_u9Dv-ctrQ7tteluo8MkL9bUzSFutbEcvkGroJxU6PTS84IHjfzCYjRsCflXcZ5k_CV2OAD2Al4i_fUCrb6cBVNvtB4TZhu97Z=w720-h405-rw"
                 alt="Third slide"
                 />
             </Carousel.Item>
