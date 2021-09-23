@@ -5,7 +5,8 @@ import Tab from "react-bootstrap/Tab";
 import Container from "react-bootstrap/Container";
 import Profile from "./profile";
 import Explore from "./explore";
-import Group from "./Group"
+import Group from "./Group";
+import Likes from "./Likes";
 
 const Header = () => {
   return (
@@ -26,7 +27,10 @@ const Header = () => {
           <Explore></Explore>
         </Tab>
           
-        <Tab eventKey="Matches" title="Matches"></Tab>
+        <Tab eventKey="Likes" title="Likes">
+          <Likes></Likes>
+        </Tab>
+          
         <Tab eventKey="Messages" title="Messages"></Tab>
         <Tab eventKey="Fruit Baskets" title="Fruit Baskets">
           <Group></Group>
