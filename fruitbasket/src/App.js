@@ -32,9 +32,7 @@ const Header = () => {
           <Likes></Likes>
         </Tab>
           
-        <Tab eventKey="Messages" title="Messages">
-          <MessagingUI></MessagingUI>
-        </Tab>
+        <Tab eventKey="Messages" title="Messages"></Tab>
         <Tab eventKey="Fruit Baskets" title="Fruit Baskets">
           <Group></Group>
         </Tab>
