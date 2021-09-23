@@ -10,6 +10,7 @@ import {
   } from 'react-router-dom';
 import BasketUI from "./BasketUI";
 import React from 'react';
+import Button from 'react-bootstrap/Button'
 
 class Group extends React.Component {
     constructor(props) {
@@ -39,12 +40,6 @@ class Group extends React.Component {
                                 </Card.Body>
                             </Card>
                         </Link>
-
-                        <Switch>
-                            <Route path="/basket">
-                                <BasketUI />
-                            </Route>
-                        </Switch>
                     </Router>
                     </Col>
                         ))}
@@ -53,6 +48,13 @@ class Group extends React.Component {
             : null
             }
             
+            {!showing ?
+                <div>
+                    <Button variant="primary" onClick={() => this.setState({ showing: true })}>Back to Baskets</Button>{' '}
+                    <BasketUI></BasketUI>
+                </div>
+            : null
+            }
         </div>
         );
         };

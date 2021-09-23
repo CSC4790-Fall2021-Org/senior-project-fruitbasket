@@ -9,11 +9,12 @@ import {
     Route,
     Switch,
   } from 'react-router-dom';
+import Button from 'react-bootstrap/Button'
 
 const BasketUI = () => {
     return(
         <div>
-            <h1>Wassup</h1>
+            <h1>Invites</h1>
         </div>
     );
 };
