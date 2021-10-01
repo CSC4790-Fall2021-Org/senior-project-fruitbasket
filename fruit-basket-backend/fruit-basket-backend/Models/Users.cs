@@ -2,6 +2,7 @@
 
 public class Users
 {
+	[Key]
 	public string User_ID { get; set; }
 
 	public string UserName { get; set; }
@@ -28,5 +29,6 @@ public class Users
 
 	public bool Interest_In_Basket { get; set; }
 
-	public string Preference_ID { get; set; }
+	[ForeignKey("Preferences")]
+	public Preferences Preference_ID { get; set; }
 }
