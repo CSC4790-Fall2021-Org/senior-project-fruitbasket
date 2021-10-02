@@ -8,6 +8,7 @@ import { useCallback, useState } from "react";
 import yosemite from './yosemitePic.jpg';
 import yosemite2 from './yosemitePic2.jfif';
 import yosemite3 from './yosemitePic3.jfif';
+import ExploreIndivual from "./ExploreIndivual";
 
 
 const Explore = () => {
@@ -38,10 +39,12 @@ const Explore = () => {
           src2: yosemite2,
           src3: yosemite3
         });
+
     };
 
     return(
-        <>
+        <ExploreIndivual></ExploreIndivual>
+        /*<>
         <Container className="text-center p-3">
             <h1> Recommended For You</h1>
         </Container>
@@ -134,7 +137,7 @@ const Explore = () => {
                 </Row>
             </Container>
         </Container>
-        </>
+        </>*/
     );
 };
 
