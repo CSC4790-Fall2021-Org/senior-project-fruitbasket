@@ -3,7 +3,7 @@ import logo from "./fruits.svg";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import Container from "react-bootstrap/Container";
-import Profile from "./profile";
+import Profile from "./profilePage/profile";
 import Explore from "./explorePage/explore";
 import Group from "./Group";
 import Likes from "./Likes";
