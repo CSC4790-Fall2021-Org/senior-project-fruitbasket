@@ -1,0 +1,39 @@
+.profile {
+    width: 1300px;
+    height: 500px;
+    background-color:#F7F6F4;
+  }
+
+.explorecarousel{
+  height: 500px;
+  overflow: hidden;
+}
+
+.profileheader{
+  font-size: 32px;
+}
+
+.bodytext{
+  font-size:20px;
+}
+
+.like-button{
+  font-size: 25px !important;
+  height:70px;
+  border-radius: 25px !important;
+}
+
+.b1 {
+  list-style-image: url(./icons/person-fill.svg);
+}
+.b2 {
+  list-style-image: url(./icons/eye-fill.svg);
+}
+.b3 {
+  list-style-image: url(./icons/house-door-fill.svg);
+}
+
+.rightbody{
+  font-size: 20px;
+  line-height: 200%;
+}

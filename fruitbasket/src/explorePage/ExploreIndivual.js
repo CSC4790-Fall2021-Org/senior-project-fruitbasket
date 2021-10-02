@@ -42,10 +42,8 @@ class ExploreIndivual extends React.Component {
             src2: yosemite2,
             src3: yosemite3
          });
-         console.log(this.state);
      };
      render() {
-         console.log(this.state);
         return(
         <>
         <Container className="text-center p-3">

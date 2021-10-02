@@ -4,7 +4,7 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import Container from "react-bootstrap/Container";
 import Profile from "./profile";
-import Explore from "./explore";
+import Explore from "./explorePage/explore";
 import Group from "./Group";
 import Likes from "./Likes";
 import MessagingUI from "./MessagingUI"
