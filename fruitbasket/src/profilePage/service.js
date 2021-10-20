@@ -6,6 +6,10 @@ class Service {
     getAllUsers(){
         return axios.get(baseurl);
     }
+
+    getAllUserByID(x){
+        return axios.get(baseurl + x);
+    }
     
 }
 

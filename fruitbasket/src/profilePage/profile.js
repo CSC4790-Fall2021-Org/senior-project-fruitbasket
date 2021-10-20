@@ -16,33 +16,28 @@ class Profile extends Component {
     super(props);
 
     this.state = {
-      profiles: [],
+      profile: [],
     };
   }
 
   componentDidMount() {
-    this.retrieveProfiles();
-  }
-
-  retrieveProfiles() {
-    service
-      .getAllUsers()
-      .then((response) => {
-        this.setState({
-          profiles: response.data,
-        });
-        console.log(response.data);
-      })
-      .catch((e) => {
-        console.log(e);
+    axios.get('https://jsonplaceholder.typicode.com/users/1')
+    .then((response) => {
+      this.setState({
+        profiles: response.data,
       });
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
   }
 
   render() {
-    const { profiles } = this.state;
+    const { profile } = this.state;
     return (
       <>
-      
+      <p></p>
       </>
     );
   }
