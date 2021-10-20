@@ -1,8 +1,8 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-public class Videos
+public class FruitPictures
 {
 	[Key]
-	public string Video_ID { get; set; }
+	public string Picture_ID { get; set; }
 }

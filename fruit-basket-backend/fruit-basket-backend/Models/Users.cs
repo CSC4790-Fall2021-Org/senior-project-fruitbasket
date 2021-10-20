@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 public class Users
 {
@@ -30,5 +32,5 @@ public class Users
 	public bool Interest_In_Basket { get; set; }
 
 	[ForeignKey("Preferences")]
-	public Preferences Preference_ID { get; set; }
+	public string Preference_ID { get; set; }
 }
