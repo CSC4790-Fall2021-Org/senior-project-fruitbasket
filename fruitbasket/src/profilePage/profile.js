@@ -37,7 +37,10 @@ class Profile extends Component {
     const { profile } = this.state;
     return (
       <>
-        <p>Name: {profile.name}</p>
+        <h1 class="text-center">{profile.name}</h1>
+        <p>{profile.phone}</p>
+        <p>{profile.username}</p>
+        <p>{profile.website}</p>
       </>
     );
   }
