@@ -1,11 +1,7 @@
 import "./profile.css";
 
-import Table from "react-bootstrap/Table";
-import Button from "react-bootstrap/Button";
-import Tabs from "react-bootstrap/Tabs";
-import Tab from "react-bootstrap/Tab";
-import Form from "react-bootstrap/Form";
-
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import axios from "axios";
 import { Component } from "react";
@@ -21,26 +17,51 @@ class Profile extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/users/1')
-    .then((response) => {
-      this.setState({
-        profile: response.data,
+    axios
+      .get("https://jsonplaceholder.typicode.com/users/1")
+      .then((response) => {
+        this.setState({
+          profile: response.data,
+        });
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
       });
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
   }
 
   render() {
     const { profile } = this.state;
     return (
       <>
-        <h1 class="text-center">{profile.name}</h1>
+        <h1 class="text-center">
+          {profile.name} | {profile.username}{" "}
+        </h1>
         <p>{profile.phone}</p>
-        <p>{profile.username}</p>
         <p>{profile.website}</p>
+
+        <div className="container-fluid text-center">
+          <Row>
+            <div className="col-md-4">
+              <Image
+                alt="test"
+                src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+              />
+            </div>
+            <div className="col-md-4">
+              <Image
+                alt="test"
+                src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+              />
+            </div>
+            <div className="col-md-4">
+              <Image
+                alt="test"
+                src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+              />
+            </div>
+          </Row>
+        </div>
       </>
     );
   }
