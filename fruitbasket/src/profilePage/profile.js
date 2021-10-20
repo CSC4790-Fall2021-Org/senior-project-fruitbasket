@@ -24,7 +24,7 @@ class Profile extends Component {
     axios.get('https://jsonplaceholder.typicode.com/users/1')
     .then((response) => {
       this.setState({
-        profiles: response.data,
+        profile: response.data,
       });
       console.log(response);
     })
@@ -37,7 +37,7 @@ class Profile extends Component {
     const { profile } = this.state;
     return (
       <>
-      <p></p>
+        <p>Name: {profile.name}</p>
       </>
     );
   }
