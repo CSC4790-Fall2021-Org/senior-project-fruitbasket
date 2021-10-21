@@ -15,6 +15,27 @@ class Profile extends Component {
     };
   }
 
+  /*
+
+   {
+      "users_ID":"000001",
+      "userName":"YoseViews",
+      "first_Name":"Yosemite",
+      "last_Name":"Cali",
+      "bio":"A Park",
+      "user_Password":"ParkPass",
+      "user_Email":"bob@gmail.com",
+      "phone_Number":"201-151-1259",
+      "date_Of_Birth":"1873-01-10T00:00:00",
+      "number_Of_Matches":51,
+      "number_Of_Baskets":51,
+      "city":"Yosemite",
+      "age":148,
+      "preference_ID":"12"
+   }
+
+  */
+
   componentDidMount() {
     const url =
       "https://fruitbasketapi20211021012825.azurewebsites.net/api/users";
