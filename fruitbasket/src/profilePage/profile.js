@@ -45,18 +45,24 @@ class Profile extends Component {
             <div className="col-md-4">
               <Image
                 alt="test"
+                width="80%" 
+                height="80%"
                 src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
               />
             </div>
             <div className="col-md-4">
               <Image
                 alt="test"
+                width="80%" 
+                height="80%"
                 src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
               />
             </div>
             <div className="col-md-4">
               <Image
                 alt="test"
+                width="80%" 
+                height="80%"
                 src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
               />
             </div>
