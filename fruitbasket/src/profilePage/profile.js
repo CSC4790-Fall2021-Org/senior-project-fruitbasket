@@ -2,7 +2,7 @@ import "./profile.css";
 
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
 import axios from "axios";
 import { Component } from "react";
 import service from "./service";
@@ -37,9 +37,7 @@ class Profile extends Component {
         <h1 class="text-center">
           {profile.name} | {profile.username}{" "}
         </h1>
-        <p>{profile.phone}</p>
-        <p>{profile.website}</p>
-
+        
         <div className="container-fluid text-center">
           <Row>
             <div className="col-md-4">
@@ -68,6 +66,11 @@ class Profile extends Component {
             </div>
           </Row>
         </div>
+
+        <h3>Phone: {profile.phone}</h3>
+        <h3>Website: {profile.website}</h3>
+        <p1> BIO</p1>
+        <p1> Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Do you have any idea how long it takes those cups to decompose. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? You know what? It is beets. I've crashed into a beet truck.</p1>
       </>
     );
   }
