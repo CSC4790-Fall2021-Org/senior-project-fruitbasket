@@ -1,5 +1,4 @@
 import "./profile.css";
-
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
@@ -11,28 +10,36 @@ import { Component } from "react";
 class Profile extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       profile: [],
     };
   }
 
   componentDidMount() {
-      const url = "https://jsonplaceholder.typicode.com/users/1";
-      axios.get(url).then(response => response.data)
+    const url =
+      "https://fruitbasketapi20211021012825.azurewebsites.net/api/users";
+    axios
+      .get(url)
+      .then((response) => response.data)
       .then((data) => {
-        this.setState({ profile: data })
-        console.log(this.state.profile)
-       })
+        this.setState({ profile: data });
+        console.log(this.state.profile);
+      })
+      .catch((error) => {
+        console.log(error.response);
+      });
   }
 
   render() {
     const { profile } = this.state;
     return (
       <>
-      <div className="text-center m-5">
-        <h1 class="text-center">{profile.name}</h1>
-        <Image className="text-center rounded border border-dark" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIGa9vRdOR3iuiRI9taJagM8cr-y2LhntDw&usqp=CAU"></Image>
+        <div className="text-center m-5">
+          <h1 class="text-center">{profile.name}</h1>
+          <Image
+            className="text-center rounded border border-dark"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIGa9vRdOR3iuiRI9taJagM8cr-y2LhntDw&usqp=CAU"
+          ></Image>
         </div>
         <div className="container-fluid text-center">
           <Row>
