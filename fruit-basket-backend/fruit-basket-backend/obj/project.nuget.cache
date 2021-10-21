@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "FxsNIP345OUciRRt7nT7Qy7YBZSB58iW1yFIlFnaAHkk9pj/zMDDKnKYxoZmEjX5UJxCICDT9c6pMC5zOGgwNg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Mason\\Desktop\\gitrepos\\senior-project-fruitbasket\\fruit-basket-backend\\fruit-basket-backend\\fruit-basket-backend.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.AspNetCore.SpaServices.Extensions. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.SpaServices.Extensions",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}
