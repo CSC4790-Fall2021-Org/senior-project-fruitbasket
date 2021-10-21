@@ -8,6 +8,7 @@ import Explore from "./explorePage/explore";
 import Group from "./Group";
 import Likes from "./Likes";
 import MessagingUI from "./MessagingUI"
+import Messages from "./Messages"
 
 const Header = () => {
   return (
@@ -32,7 +33,9 @@ const Header = () => {
           <Likes></Likes>
         </Tab>
           
-        <Tab eventKey="Messages" title="Messages"></Tab>
+        <Tab eventKey="Messages" title="Messages">
+          <Messages></Messages>
+        </Tab>
         <Tab eventKey="Fruit Baskets" title="Fruit Baskets">
           <Group></Group>
         </Tab>
