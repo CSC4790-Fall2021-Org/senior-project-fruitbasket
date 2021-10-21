@@ -37,7 +37,7 @@ class Profile extends Component {
       <>
       <div className="text-center m-5">
         <h1 class="text-center">{profile.name}</h1>
-        <Image className="text-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIGa9vRdOR3iuiRI9taJagM8cr-y2LhntDw&usqp=CAU"></Image>
+        <Image className="text-center rounded border border-dark" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIGa9vRdOR3iuiRI9taJagM8cr-y2LhntDw&usqp=CAU"></Image>
         </div>
         <div className="container-fluid text-center">
           <Row>
