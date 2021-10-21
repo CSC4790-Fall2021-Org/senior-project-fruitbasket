@@ -35,65 +35,58 @@ class Profile extends Component {
     const { profile } = this.state;
     return (
       <>
-        <h1 class="text-center">
-          {profile.name} | {profile.username}{" "}
-        </h1>
+        <h1 class="text-center">{profile.name}</h1>
 
         <div className="container-fluid text-center">
           <Row>
             <div className="col-md-4">
-              <Image
-                alt="test"
-                width="80%"
-                height="80%"
-                src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
-              />
+              <Card className="text-center">
+                <h3> Username </h3>
+                <h3>{profile.username} </h3>
+                <Form>
+                  <input></input>
+                  <Button>update</Button>
+                </Form>
+              </Card>
             </div>
             <div className="col-md-4">
-              <Image
-                alt="test"
-                width="80%"
-                height="80%"
-                src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
-              />
+              <Card className="text-center">
+                <h3> Phone Number </h3>
+                <h3>{profile.phone} </h3>
+                <Form>
+                  <input></input>
+                  <Button>update</Button>
+                </Form>
+              </Card>
             </div>
             <div className="col-md-4">
-              <Image
-                alt="test"
-                width="80%"
-                height="80%"
-                src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
-              />
+              <Card className="text-center">
+                <h3> Website </h3>
+                <h3>{profile.website} </h3>
+                <Form>
+                  <input></input>
+                  <Button>update</Button>
+                </Form>
+              </Card>
             </div>
           </Row>
+
+          <Card className="m-5">
+            <h1> BIO</h1>
+            <p>
+              {" "}
+              Do you have any idea how long it takes those cups to decompose.
+              Yes, Yes, without the oops! Do you have any idea how long it takes
+              those cups to decompose. Is this my espresso machine? Wh-what
+              is-h-how did you get my espresso machine? You know what? It is
+              beets. I've crashed into a beet truck.
+            </p>
+            <Form>
+              <input></input>
+              <Button>update</Button>
+            </Form>
+          </Card>
         </div>
-
-        <Card className="text-center">
-          <h3> phone number </h3>
-          <h3>{profile.phone} </h3>
-          <Form>
-            <input></input>
-            <Button>edit</Button>
-          </Form>
-          
-          <h3> website </h3>
-          <h3>{profile.website} </h3>
-          <Form>
-            <input></input>
-            <Button> edit</Button>
-          </Form>
-          
-
-        </Card>
-        <h1> BIO</h1>
-        <p1>
-          {" "}
-          Do you have any idea how long it takes those cups to decompose. Yes,
-          Yes, without the oops! Do you have any idea how long it takes those
-          cups to decompose. Is this my espresso machine? Wh-what is-h-how did
-          you get my espresso machine? You know what? It is beets. I've crashed
-          into a beet truck.
-        </p1>
       </>
     );
   }
