@@ -51,6 +51,7 @@ class Profile extends Component {
       });
   }
 
+  
   render() {
     const { profile } = this.state;
     return (
