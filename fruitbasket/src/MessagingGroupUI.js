@@ -20,7 +20,7 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 
 
-const MessagingUI = () => {
+const MessagingGroupUI = () => {
     return(
         <div>
             <div style={{ position: "relative", height: "500px" }}>
@@ -45,4 +45,4 @@ const MessagingUI = () => {
 
 //route to the fruit basket (write api get request that returns data of the people within the fruit basket)
 
-export default MessagingUI
+export default MessagingGroupUI

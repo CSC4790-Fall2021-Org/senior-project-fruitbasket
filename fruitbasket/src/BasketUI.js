@@ -18,14 +18,14 @@ import {
   Message,
   MessageInput,
 } from "@chatscope/chat-ui-kit-react";
-import MessagingUI from "./MessagingUI";
+import MessagingGroupUI from "./MessagingGroupUI";
 import Group from "./Group";
 
 
 const BasketUI = () => {
     return(
         <div>
-            <MessagingUI></MessagingUI>
+            <MessagingGroupUI></MessagingGroupUI>
         </div>
     );
 };

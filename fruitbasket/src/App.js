@@ -7,7 +7,7 @@ import Profile from "./profilePage/profile";
 import Explore from "./explorePage/explore";
 import Group from "./Group";
 import Likes from "./Likes";
-import MessagingUI from "./MessagingUI"
+import MessagingUI from "./MessagingGroupUI"
 import Messages from "./Messages"
 
 const Header = () => {

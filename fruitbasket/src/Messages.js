@@ -16,6 +16,7 @@ import {
     Conversation,
     Avatar,
   } from "@chatscope/chat-ui-kit-react";
+import MessagingSingleUI from "./MessagingSingleUI";
 
 class Messages extends React.Component {
     constructor(props) {
@@ -75,9 +76,8 @@ class Messages extends React.Component {
             
             {!showing ?
                 <div>
-                    <Button variant="primary" onClick={() => this.setState({ showing: true })}>Back to Baskets</Button>{' '}
-                    <Button variant="outline-warning">Basket Join Requests</Button>{' '}
-                    <BasketUI></BasketUI>
+                    <Button variant="primary" onClick={() => this.setState({ showing: true })}>Back to Messages</Button>{' '}
+                    <MessagingSingleUI></MessagingSingleUI>
                 </div>
             : null
             }
