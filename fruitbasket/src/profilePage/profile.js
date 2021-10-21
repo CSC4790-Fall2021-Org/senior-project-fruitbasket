@@ -38,7 +38,7 @@ class Profile extends Component {
 
   componentDidMount() {
     const url =
-      "ask someone";
+      "https://fruitbasketapi20211021012825.azurewebsites.net/api/users";
     axios
       .get(url)
       .then((response) => response.data)

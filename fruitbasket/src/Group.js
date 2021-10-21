@@ -11,6 +11,11 @@ import {
 import BasketUI from "./BasketUI";
 import React from 'react';
 import Button from 'react-bootstrap/Button'
+import {
+    ConversationList,
+    Conversation,
+    Avatar,
+  } from "@chatscope/chat-ui-kit-react";
 
 class Group extends React.Component {
     constructor(props) {
@@ -27,27 +32,29 @@ class Group extends React.Component {
         return(
         <div>
             {showing ?
-            <div>
-                <Row xs={1} md={2} className="g-4">
-                    {Array.from({ length: 4 }).map((_, idx) => (
-                    <Col>
-
-                    <Router>
-                        <Link to={'/basket'} onClick={() => this.setState({ showing: !showing })}>   
-                            <Card hoverable>
-                                <Card.Img variant="top" src="https://media.istockphoto.com/photos/multi_ethnic-teenagers-taking-a-self-portrait-stock-photo-picture-id1184216653?k=20&m=1184216653&s=612x612&w=0&h=T6xt_a6r-fmG0l3dzX-EHbVPQkJQeY-VX4zb7skIbPQ=" />
-                                <Card.Body>
-                                <Card.Title>Fruit Basket name</Card.Title>
-                                <Card.Text>
-                                    Members of the Fruit Basket
-                                </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Link>
-                    </Router>
-                    </Col>
-                        ))}
-                </Row>
+            <div style={{
+            height: "500px"
+            }}>
+                <ConversationList>        
+                    <Conversation name="Peaches" lastSenderName="Peaches" info="Yes i can do it for you" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn.shopify.com/s/files/1/1061/1924/products/Peach_Emoji_large.png?v=1571606034" name="Peaches!" />
+                    </Conversation>
+                    
+                    <Conversation name="Eggplants" lastSenderName="Eggplants" info="Yes i can do it for you" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn.shopify.com/s/files/1/1061/1924/products/Eggplant_Emoji_large.png?v=1571606066" name="Eggplants!" />
+                    </Conversation>
+                    
+                    <Conversation name="Bananas" lastSenderName="Bananas" info="Yes i can do it for you" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/118/banana_1f34c.png" name="Bananas!" />
+                    </Conversation>
+                    
+                    <Conversation name="Pineapples" lastSenderName="Pineapples" info="Yes i can do it for you" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/81/pineapple_1f34d.png" name="Pineapples!" />
+                    </Conversation>
+                                
+                    
+                    
+                </ConversationList>
             </div>
             : null
             }
