@@ -43,7 +43,7 @@ class Profile extends Component {
       .get(url)
       .then((response) => response.data)
       .then((data) => {
-        this.setState({ profile: data });
+        this.setState({ profile: data[0] });
         console.log(this.state.profile);
       })
       .catch((error) => {
@@ -67,7 +67,7 @@ class Profile extends Component {
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Username </h3>
-                <h3>{profile.username} </h3>
+                <h3>{profile.userName} </h3>
                 <Form>
                   <input></input>
                   <Button>update</Button>
@@ -77,7 +77,7 @@ class Profile extends Component {
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Phone Number </h3>
-                <h3>{profile.phone} </h3>
+                <h3>{profile.phone_Number} </h3>
                 <Form>
                   <input></input>
                   <Button>update</Button>
@@ -86,8 +86,8 @@ class Profile extends Component {
             </div>
             <div className="col-md-4">
               <Card className="text-center">
-                <h3> Website </h3>
-                <h3>{profile.website} </h3>
+                <h3> Age </h3>
+                <h3>{profile.age} </h3>
                 <Form>
                   <input></input>
                   <Button>update</Button>
@@ -99,12 +99,8 @@ class Profile extends Component {
           <Card className="m-5">
             <h1> BIO</h1>
             <p>
-              {" "}
-              Do you have any idea how long it takes those cups to decompose.
-              Yes, Yes, without the oops! Do you have any idea how long it takes
-              those cups to decompose. Is this my espresso machine? Wh-what
-              is-h-how did you get my espresso machine? You know what? It is
-              beets. I've crashed into a beet truck.
+              {profile.bio}
+              
             </p>
             <Form>
               <input></input>
