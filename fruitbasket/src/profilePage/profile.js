@@ -18,17 +18,12 @@ class Profile extends Component {
   }
 
   componentDidMount() {
-    axios
-      .get("https://jsonplaceholder.typicode.com/users/1")
-      .then((response) => {
-        this.setState({
-          profile: response.data,
-        });
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+      const url = "https://jsonplaceholder.typicode.com/users/1";
+      axios.get(url).then(response => response.data)
+      .then((data) => {
+        this.setState({ profile: data })
+        console.log(this.state.profile)
+       })
   }
 
   render() {
