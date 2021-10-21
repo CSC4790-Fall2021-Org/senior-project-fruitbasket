@@ -50,8 +50,9 @@ class Profile extends Component {
         console.log(error.response);
       });
   }
-
   
+
+
   render() {
     const { profile } = this.state;
     return (
