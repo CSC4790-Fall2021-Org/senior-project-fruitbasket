@@ -15,14 +15,35 @@ class Profile extends Component {
     };
   }
 
+  /*
+
+   {
+      "users_ID":"000001",
+      "userName":"YoseViews",
+      "first_Name":"Yosemite",
+      "last_Name":"Cali",
+      "bio":"A Park",
+      "user_Password":"ParkPass",
+      "user_Email":"bob@gmail.com",
+      "phone_Number":"201-151-1259",
+      "date_Of_Birth":"1873-01-10T00:00:00",
+      "number_Of_Matches":51,
+      "number_Of_Baskets":51,
+      "city":"Yosemite",
+      "age":148,
+      "preference_ID":"12"
+   }
+
+  */
+
   componentDidMount() {
     const url =
-      "https://fruitbasketapi20211021012825.azurewebsites.net/api/users";
+      "ask someone";
     axios
       .get(url)
       .then((response) => response.data)
       .then((data) => {
-        this.setState({ profile: data });
+        this.setState({ profile: data[0] });
         console.log(this.state.profile);
       })
       .catch((error) => {
@@ -46,7 +67,7 @@ class Profile extends Component {
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Username </h3>
-                <h3>{profile.username} </h3>
+                <h3>{profile.userName} </h3>
                 <Form>
                   <input></input>
                   <Button>update</Button>
@@ -56,7 +77,7 @@ class Profile extends Component {
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Phone Number </h3>
-                <h3>{profile.phone} </h3>
+                <h3>{profile.phone_Number} </h3>
                 <Form>
                   <input></input>
                   <Button>update</Button>
@@ -65,8 +86,8 @@ class Profile extends Component {
             </div>
             <div className="col-md-4">
               <Card className="text-center">
-                <h3> Website </h3>
-                <h3>{profile.website} </h3>
+                <h3> Age </h3>
+                <h3>{profile.age} </h3>
                 <Form>
                   <input></input>
                   <Button>update</Button>
@@ -78,12 +99,8 @@ class Profile extends Component {
           <Card className="m-5">
             <h1> BIO</h1>
             <p>
-              {" "}
-              Do you have any idea how long it takes those cups to decompose.
-              Yes, Yes, without the oops! Do you have any idea how long it takes
-              those cups to decompose. Is this my espresso machine? Wh-what
-              is-h-how did you get my espresso machine? You know what? It is
-              beets. I've crashed into a beet truck.
+              {profile.bio}
+              
             </p>
             <Form>
               <input></input>
