@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/FruitBasketApi/apis/fruitbasket",
+      "type": "apis.azure",
+      "apiEndpoint": "https://fruitbasketapi.azure-api.net/v1"
+    }
+  }
+}
