@@ -10,6 +10,7 @@ import yosemite2 from './yosemitePic2.jfif';
 import yosemite3 from './yosemitePic3.jfif';
 import ExploreIndivual from "./ExploreIndivual";
 import ExploreBasket from "./ExploreBasket";
+import Filter from "./Filter";
 
 
 const Explore = () => {
@@ -35,7 +36,9 @@ const Explore = () => {
     };
 
     return(
-        <><ExploreIndivual
+        <>
+        <Filter></Filter>
+        <ExploreIndivual
             name= 'John Smith'
             ag= '79'
             city= 'Villanova, PA'
