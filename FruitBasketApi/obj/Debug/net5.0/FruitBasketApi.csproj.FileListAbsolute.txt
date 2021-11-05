@@ -157,3 +157,10 @@ C:\Users\John\source\repos\FruitBasketApi\FruitBasketApi\obj\Debug\net5.0\ref\Fr
 C:\Users\John\source\repos\FruitBasketApi\FruitBasketApi\obj\Debug\net5.0\FruitBasketApi.pdb
 C:\Users\John\source\repos\FruitBasketApi\FruitBasketApi\obj\Debug\net5.0\FruitBasketApi.genruntimeconfig.cache
 C:\Users\John\source\repos\FruitBasketApi\FruitBasketApi\obj\Debug\net5.0\FruitBasketApi.csprojAssemblyReference.cache
+C:\Users\Mason\Desktop\gitrepos\senior-project-fruitbasket\FruitBasketApi\obj\Debug\net5.0\FruitBasketApi.csproj.AssemblyReference.cache
+C:\Users\Mason\Desktop\gitrepos\senior-project-fruitbasket\FruitBasketApi\obj\Debug\net5.0\FruitBasketApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mason\Desktop\gitrepos\senior-project-fruitbasket\FruitBasketApi\obj\Debug\net5.0\FruitBasketApi.AssemblyInfoInputs.cache
+C:\Users\Mason\Desktop\gitrepos\senior-project-fruitbasket\FruitBasketApi\obj\Debug\net5.0\FruitBasketApi.AssemblyInfo.cs
+C:\Users\Mason\Desktop\gitrepos\senior-project-fruitbasket\FruitBasketApi\obj\Debug\net5.0\FruitBasketApi.csproj.CoreCompileInputs.cache
+C:\Users\Mason\Desktop\gitrepos\senior-project-fruitbasket\FruitBasketApi\obj\Debug\net5.0\FruitBasketApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mason\Desktop\gitrepos\senior-project-fruitbasket\FruitBasketApi\obj\Debug\net5.0\FruitBasketApi.MvcApplicationPartsAssemblyInfo.cache

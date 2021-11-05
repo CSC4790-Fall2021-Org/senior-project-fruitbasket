@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,23 +12,23 @@ namespace FruitBasketApi.Models
 		[Key]
 		public string Profile_ID { get; set; }
 
-		[ForeignKey]
+		[ForeignKey("Pictures")]
 		public string Picture_ID { get; set; }
 
 		public DateTime Date_of_Birth { get; set; }
 
 		public int Age { get; set; }
 
-		[ForeignKey]
+		[ForeignKey("Usernames")]
 		public string Username { get; set; }
 
-		[ForeignKey]
+		[ForeignKey("Cities")]
 		public string City { get; set; }
 
-		[ForeignKey]
+		[ForeignKey("Interests")]
 		public int Interest_ID { get; set; }
 
-		[ForeignKey]
+		[ForeignKey("Videos")]
 		public int Video_ID { get; set; }
 
 	}

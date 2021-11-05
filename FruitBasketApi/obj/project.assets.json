@@ -7714,19 +7714,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\John\\.nuget\\packages\\": {}
+    "C:\\Users\\Mason\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\John\\source\\repos\\FruitBasketApi\\FruitBasketApi\\FruitBasketApi.csproj",
+      "projectUniqueName": "C:\\Users\\Mason\\Desktop\\gitrepos\\senior-project-fruitbasket\\FruitBasketApi\\FruitBasketApi.csproj",
       "projectName": "FruitBasketApi",
-      "projectPath": "C:\\Users\\John\\source\\repos\\FruitBasketApi\\FruitBasketApi\\FruitBasketApi.csproj",
-      "packagesPath": "C:\\Users\\John\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\John\\source\\repos\\FruitBasketApi\\FruitBasketApi\\obj\\",
+      "projectPath": "C:\\Users\\Mason\\Desktop\\gitrepos\\senior-project-fruitbasket\\FruitBasketApi\\FruitBasketApi.csproj",
+      "packagesPath": "C:\\Users\\Mason\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mason\\Desktop\\gitrepos\\senior-project-fruitbasket\\FruitBasketApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\John\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mason\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7811,7 +7811,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

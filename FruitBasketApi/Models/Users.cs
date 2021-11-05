@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -37,7 +38,7 @@ namespace FruitBasketApi.Models
 		public int Age { get; set; }
 
 
-		//[ForeignKey("Preferences")]
+		[ForeignKey("Preferences")]
 		public string Preference_ID { get; set; }
 	}
 
@@ -71,7 +72,7 @@ namespace FruitBasketApi.Models
 		public int Age { get; set; }
 
 
-		//[ForeignKey("Preferences")]
+		[ForeignKey("Preferences")]
 		public string Preference_ID { get; set; }
 
 	}

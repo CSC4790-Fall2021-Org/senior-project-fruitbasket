@@ -12,10 +12,10 @@ namespace FruitBasketApi.Models
 		[Key]
 		public string Match_ID { get; set; }
 
-		[ForeignKey]
+		[ForeignKey("Users")]
 		public string User_ID { get; set; }
 
-		[ForeignKey]
+		[ForeignKey("Interest_In_Baskets")]
 		public bool Interest_in_Basket { get; set; }
 	}
 }
