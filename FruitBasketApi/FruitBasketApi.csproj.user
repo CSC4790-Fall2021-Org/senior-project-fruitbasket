@@ -11,5 +11,9 @@
     <WebStackScaffolding_DbContextTypeFullName>FruitBasketApi.Models.FruitBasketContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <NameOfLastUsedPublishProfile>FruitBasketApi20211021012825 - Web Deploy</NameOfLastUsedPublishProfile>
+    <ActiveDebugProfile>FruitBasketApi</ActiveDebugProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>
