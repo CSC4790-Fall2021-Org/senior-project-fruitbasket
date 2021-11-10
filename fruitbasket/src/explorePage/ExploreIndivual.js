@@ -11,28 +11,45 @@ import yosemite from './yosemitePic.jpg';
 import yosemite2 from './yosemitePic2.jfif';
 import yosemite3 from './yosemitePic3.jfif';
 import Explore from "./explore";
-
+import axios from "axios";
 
 class ExploreIndivual extends React.Component {
     constructor(props) { 
         super(props);
+        this.state = {
+            name : this.props.name,
+            age : this.props.age,
+            city : this.props.city,
+            selfSummary : this.props.selfSummary,
+            doing : this.props.doing,
+            goodat : this.props.goodat,
+            style : this.props.style,
+            src1 : this.props.src1,
+            src2 : this.props.src2,
+            src3 : this.props.src3
+        };
      };
+     
      handleChange = () => {
-         this.setState({
-            name: "Yosemite",  
-            age: '1098',
-            city: 'Yosemite, CA',
-            selfSummary: 'Park',
-            doing: 'being a place',
-            goodat: 'having sun, air, and grass',
-            style: 'lots of waterfalls',
-            src1: yosemite,
-            src2: yosemite2,
-            src3: yosemite3
-         });
+        this.setState((previousState) => {
+            return {
+                name: "Yosemite",  
+                age: '1098',
+                city: 'Yosemite, CA',
+                selfSummary: 'Park',
+                doing: 'being a place',
+                goodat: 'having sun, air, and grass',
+                style: 'lots of waterfalls',
+                src1: yosemite,
+                src2: yosemite2,
+                src3: yosemite3
+            };
+        });
      };
      render() {
+        console.log(this.props);
         return(
+            
         <>
         <Container className="text-center p-3">
             <h1> Recommended For You</h1>
@@ -41,15 +58,16 @@ class ExploreIndivual extends React.Component {
         <Container className="block-example border border-dark rounded shadow-lg">
 
         <Container className="d-flex justify-content-around mt-5 profileheader">
-         {this.props.name} | {this.props.age} | {this.props.city}
-                <Button className="like-button btn-outline-dark bg-transparent" onClick={this.props.handleChange}>
+
+         {this.state.name} | {this.state.age} | {this.state.city}
+                <Button className="like-button btn-outline-dark bg-transparent" onClick={this.handleChange}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
                     <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
                     </svg>
                 PASS
               </Button>
 
-                <Button className="like-button btn-outline-danger bg-transparent" onClick={this.props.handleChange}>
+                <Button className="like-button btn-outline-danger bg-transparent" onClick={this.handleChange}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                     </svg>
@@ -62,7 +80,7 @@ class ExploreIndivual extends React.Component {
             <Carousel.Item interval={1000}>
                 <img
                 className="d-block w-100"
-                src= {this.props.src1}
+                src= {this.state.src1}
                 alt="First slide"
                 />
             </Carousel.Item>
@@ -70,7 +88,7 @@ class ExploreIndivual extends React.Component {
             <Carousel.Item interval={500}>
                 <img
                 className="d-block w-100"
-                src= {this.props.src2}
+                src= {this.state.src2}
                 alt="Second slide"
                 />
             </Carousel.Item>
@@ -78,7 +96,7 @@ class ExploreIndivual extends React.Component {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src= {this.props.src3}
+                src= {this.state.src3}
                 alt="Third slide"
                 />
             </Carousel.Item>
@@ -90,19 +108,19 @@ class ExploreIndivual extends React.Component {
                     <Col sm={8}>
                         <h1>My self-summary</h1>
                         <p1 className="bodytext">
-                        {this.props.selfSummary}
+                        {this.state.selfSummary}
                         </p1>
                         <h1>What I'm doing with my life</h1>
                         <p1 className="bodytext">
-                        {this.props.doing}
+                        {this.state.doing}
                         </p1>
                         <h1>I'm really good at</h1>
                         <p1 className="bodytext">
-                        {this.props.goodat}
+                        {this.state.goodat}
                         </p1>
                         <h1>My style can be described as</h1>
                         <p1 className="bodytext">
-                       {this.props.style}
+                       {this.state.style}
                         </p1>
                     </Col>
 
