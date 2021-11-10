@@ -3,6 +3,7 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
 import axios from "axios";
 import { Component } from "react";
@@ -12,50 +13,47 @@ class Profile extends Component {
     super(props);
     this.state = {
       profile: [],
+      userids: [],
+      dropDownValue: "Select User",
     };
   }
-
-  /*
-
-   {
-      "users_ID":"000001",
-      "userName":"YoseViews",
-      "first_Name":"Yosemite",
-      "last_Name":"Cali",
-      "bio":"A Park",
-      "user_Password":"ParkPass",
-      "user_Email":"bob@gmail.com",
-      "phone_Number":"201-151-1259",
-      "date_Of_Birth":"1873-01-10T00:00:00",
-      "number_Of_Matches":51,
-      "number_Of_Baskets":51,
-      "city":"Yosemite",
-      "age":148,
-      "preference_ID":"12"
-   }
-
-  */
+  changeValue(text) {
+    this.setState({ dropDownValue: text });
+  }
 
   componentDidMount() {
     const url =
       "https://fruitbasketapi20211021012825.azurewebsites.net/api/users";
     axios
       .get(url)
-      .then((response) => response.data)
+      .then((response) => response.data[0])
       .then((data) => {
-        this.setState({ profile: data[0] });
+        this.setState({ profile: data });
+        this.setState({ userids: data.users_ID });
         console.log(this.state.profile);
+        console.log(this.state.userids)
       })
       .catch((error) => {
         console.log(error.response);
       });
   }
-  
 
   render() {
     const { profile } = this.state;
+    const { userids } = this.state;
     return (
       <>
+        <Dropdown>
+          <Dropdown.Toggle id="dropdown-basic">
+            {this.state.dropDownValue}
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item as="button">
+            {userids}
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+
         <div className="text-center m-5">
           <h1 class="text-center">{profile.name}</h1>
           <Image
@@ -99,10 +97,7 @@ class Profile extends Component {
 
           <Card className="m-5">
             <h1> BIO</h1>
-            <p>
-              {profile.bio}
-              
-            </p>
+            <p>{profile.bio}</p>
             <Form>
               <input></input>
               <Button>update</Button>
