@@ -2,9 +2,9 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import Profile from "./profilePage/profile";
 import Explore from "./explorePage/explore";
-import Group from "./Group";
+import Messages from "./messagesPage/Messages";
+import Group from "./fruitBasketPage/Group";
 import Likes from "./Likes";
-import Messages from "./Messages";
 
 export const Header = () => {
   return (
