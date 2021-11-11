@@ -16,20 +16,25 @@ class Profile extends Component {
       profile: [],
       userids: [],
       dropDownValue: "Select User",
-      currentid:"000001",
+      currentid: "000001",
 
-      username: []
+      username: [],
     };
   }
   changeValue(text) {
     this.setState({ dropDownValue: text });
-    this.setState({currentid:text});
-    this.setState({username: })
+    this.setState({ currentid: text });
+  }
+
+  putValue(val)
+  {
+      const username = { userName: 'test put request' };
+      axios.put('https://fruitbasketapi20211021012825.azurewebsites.net/api/users', username)
   }
 
   componentDidMount() {
     const url =
-      "";
+      "https://fruitbasketapi20211021012825.azurewebsites.net/api/users";
     axios
       .get(url)
       .then((response) => response.data)
@@ -51,7 +56,6 @@ class Profile extends Component {
   render() {
     const { profile } = this.state;
     const { userids } = this.state;
-    const { allprofiles } = this.state;
     const { username } = this.state;
     return (
       <>
@@ -80,16 +84,22 @@ class Profile extends Component {
         </div>
         <div className="container-fluid text-center">
           <Row>
+
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Username </h3>
-                <h3>{ username} </h3>
+                <h3>{username} </h3>
                 <Form>
                   <input></input>
-                  <Button>update</Button>
+                  <Button 
+                  onClick={(e) => this.putValue(e.target.textContent)}>
+                  update
+                  </Button>
+
                 </Form>
               </Card>
             </div>
+
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Phone Number </h3>
