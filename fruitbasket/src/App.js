@@ -18,8 +18,7 @@ const Login = () => {
     <>
       <div class="container-fluid">
         <div class="row">
-        <div class="col-md-3">
-        </div>
+          <div class="col-md-3"></div>
           <div class="col-md-3">
             <h1 className="text-center p-5">Login</h1>
 
@@ -34,10 +33,9 @@ const Login = () => {
                   <Form.Control type="password" />
                 </Form.Group>
                 <Link to="/app">
-                <Button block size="lg" type="submit">
-                  Login
-                  
-                </Button>
+                  <Button block size="lg" type="submit">
+                    Login
+                  </Button>
                 </Link>
               </Form>
             </Card>
@@ -45,6 +43,39 @@ const Login = () => {
 
           <div class="col-md-6">
             <h1 className="text-center">Create New User</h1>
+            <Form.Group size="lg">
+              <Form.Label>users_ID</Form.Label>
+              <Form.Control />
+              <Form.Label>userName</Form.Label>
+              <Form.Control />
+              <Form.Label>first_Name</Form.Label>
+              <Form.Control />
+              <Form.Label>last_Name</Form.Label>
+               <Form.Control />
+              <Form.Label>bio</Form.Label>
+              <Form.Control />
+              <Form.Label>user_Password</Form.Label>
+              <Form.Control />
+              <Form.Label>user_Email</Form.Label>
+              <Form.Control />
+              <Form.Label>phone_Number</Form.Label>
+              <Form.Control />
+              <Form.Label>date_Of_Birth</Form.Label>
+              <Form.Control />
+              <Form.Label>number_Of_Matches</Form.Label>
+              <Form.Control />
+              <Form.Label>number_Of_Baskets</Form.Label>
+              <Form.Control />
+              <Form.Label>city</Form.Label>
+              <Form.Control />
+              <Form.Label>age</Form.Label>
+              <Form.Control />
+              <Form.Label>preference_ID</Form.Label>
+              <Form.Control />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
           </div>
         </div>
       </div>
