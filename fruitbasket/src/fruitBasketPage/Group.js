@@ -66,9 +66,9 @@ class Group extends React.Component {
             
             {!showing ?
                 <div>
-                    <div style={{ display: 'inline-block', padding: 5 }}><Button onClick={() => this.setState({ showing: true })}>Back to Baskets</Button></div>
-                    <div style={{ display: 'inline-block', padding: 5 }}><BasketInvites ></BasketInvites></div>
-                    <div style={{ display: 'inline-block' }}><BasketMembers></BasketMembers></div>
+                    <div style={{ display: 'inline-block', padding: 2 }}><Button onClick={() => this.setState({ showing: true })}>Back to Baskets</Button></div>
+                    <div style={{ display: 'inline-block', padding: 2 }}><BasketInvites ></BasketInvites></div>
+                    <div style={{ display: 'inline-block', padding: 2 }}><BasketMembers></BasketMembers></div>
                     <BasketUI></BasketUI>
                 </div>
             : null
