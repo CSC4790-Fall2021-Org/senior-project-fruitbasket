@@ -14,12 +14,14 @@ class Profile extends Component {
     this.state = {
       allprofiles: [],
       profile: [],
-      userids: {},
+      userids: [],
       dropDownValue: "Select User",
+      currentid:"000001"
     };
   }
   changeValue(text) {
     this.setState({ dropDownValue: text });
+    this.setState({currentid:text});
   }
 
   componentDidMount() {
@@ -56,7 +58,7 @@ class Profile extends Component {
               onClick={(e) => this.changeValue(e.target.textContent)}
             >
               {Object.keys(userids).map((oneKey, i) => {
-                return <li key={i}>{userids[oneKey]}</li>;
+                return <Dropdown.Item key={i}>{userids[oneKey]}</Dropdown.Item>;
               })}
             </Dropdown.Item>
           </Dropdown.Menu>
