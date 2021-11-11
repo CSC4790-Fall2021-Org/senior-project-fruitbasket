@@ -11,16 +11,19 @@ import {
 import BasketUI from "./BasketUI";
 import React from 'react';
 import Button from 'react-bootstrap/Button'
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
+
 import {
     ConversationList,
     Conversation,
     Avatar,
   } from "@chatscope/chat-ui-kit-react";
+import BasketInvites from "./BasketInvites";
 
 class Group extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { showing: true };
+        this.state = { showing: true , modal :false};
       }
 
     buttonClick(){
@@ -28,7 +31,7 @@ class Group extends React.Component {
     }
     
     render() {
-        const { showing } = this.state;
+        const { showing , modal} = this.state;
         return(
         <div>
             {showing ?
@@ -61,8 +64,8 @@ class Group extends React.Component {
             
             {!showing ?
                 <div>
-                    <Button variant="primary" onClick={() => this.setState({ showing: true })}>Back to Baskets</Button>{' '}
-                    <Button variant="outline-warning">Basket Join Requests</Button>{' '}
+                    <div style={{ display: 'inline-block', padding: 5 }}><Button onClick={() => this.setState({ showing: true })}>Back to Baskets</Button></div>
+                    <div style={{ display: 'inline-block' }}><BasketInvites ></BasketInvites></div>
                     <BasketUI></BasketUI>
                 </div>
             : null
@@ -72,6 +75,8 @@ class Group extends React.Component {
         };
         
     }
+
+
 
 //route to the fruit basket (write api get request that returns data of the people within the fruit basket)
 

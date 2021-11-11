@@ -20,16 +20,25 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 import MessagingGroupUI from "./MessagingGroupUI";
 import Group from "./Group";
+import React from "react";
+import BasketInvites from "./BasketInvites";
 
 
-const BasketUI = () => {
+class BasketUI extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {showing:true}
+  }
+
+  render(){
+  
     return(
         <div>
             <MessagingGroupUI></MessagingGroupUI>
         </div>
-    );
-};
+        );  
+  }
+}
 
 //route to the fruit basket (write api get request that returns data of the people within the fruit basket)
-
 export default BasketUI

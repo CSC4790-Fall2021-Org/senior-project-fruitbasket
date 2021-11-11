@@ -18,7 +18,7 @@ import {
   Message,
   MessageInput,
 } from "@chatscope/chat-ui-kit-react";
-
+import BasketInvites from "./BasketInvites";
 
 const MessagingGroupUI = () => {
     return(
