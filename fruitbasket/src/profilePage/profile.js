@@ -16,27 +16,32 @@ class Profile extends Component {
       profile: [],
       userids: [],
       dropDownValue: "Select User",
-      currentid:"000001"
+      currentid:"000001",
+
+      username: []
     };
   }
   changeValue(text) {
     this.setState({ dropDownValue: text });
     this.setState({currentid:text});
+    this.setState({username: })
   }
 
   componentDidMount() {
     const url =
-      "https://fruitbasketapi20211021012825.azurewebsites.net/api/users";
+      "";
     axios
       .get(url)
       .then((response) => response.data)
       .then((data) => {
         this.setState({ allprofiles: data });
+        this.setState({ username: data[0].userName });
         this.setState({ profile: data[0] });
         this.setState({ userids: data.map((data) => data.users_ID) });
 
         console.log(this.state.profile);
         console.log(this.state.userids);
+        console.log(this.state.allprofiles);
       })
       .catch((error) => {
         console.log(error.response);
@@ -46,6 +51,8 @@ class Profile extends Component {
   render() {
     const { profile } = this.state;
     const { userids } = this.state;
+    const { allprofiles } = this.state;
+    const { username } = this.state;
     return (
       <>
         <Dropdown>
@@ -76,7 +83,7 @@ class Profile extends Component {
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Username </h3>
-                <h3>{profile.userName} </h3>
+                <h3>{ username} </h3>
                 <Form>
                   <input></input>
                   <Button>update</Button>
