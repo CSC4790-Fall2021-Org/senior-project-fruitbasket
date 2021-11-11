@@ -24,6 +24,34 @@ class Login extends Component {
           preference_ID: ""
         };
       };
+
+      onSubmit = () => {
+        axios
+          .post("https://fruitbasketapi20211021012825.azurewebsites.net/api/users", {
+            users_ID:this.users_ID,
+            userName:this.userName, 
+            first_Name:this.first_Name,
+            last_Name:this.lastName,
+            bio:this.bio,
+            user_Password:this.user_Password,
+            user_Email:this.user_Email,
+            phone_Number:this.phone_Number,
+            date_Of_Birth:this.date_Of_birth,
+            number_Of_Matches:this.number_Of_Matches,
+            number_Of_Baskets:this.number_Of_Baskets,
+            city:this.city,
+            age:this.age
+          })
+          .then((response) => {
+            setPost(response.data);
+          });
+      }
+
+
+      onChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value });
+      }
+      
   render() {
     return (
       <>
@@ -56,7 +84,10 @@ class Login extends Component {
               <h1 className="text-center">Create New User</h1>
               <Form.Group className="text-center" size="lg">
                 <Form.Label>users_ID</Form.Label>
-                <Form.Control required />
+                <Form.Control 
+                required 
+                onChange={this.onChange}
+                />
                 <Form.Label>userName</Form.Label>
                 <Form.Control required />
                 <Form.Label>first_Name</Form.Label>
