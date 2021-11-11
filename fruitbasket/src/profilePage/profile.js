@@ -12,8 +12,9 @@ class Profile extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      allprofiles: [],
       profile: [],
-      userids: [],
+      userids: {},
       dropDownValue: "Select User",
     };
   }
@@ -26,12 +27,14 @@ class Profile extends Component {
       "https://fruitbasketapi20211021012825.azurewebsites.net/api/users";
     axios
       .get(url)
-      .then((response) => response.data[0])
+      .then((response) => response.data)
       .then((data) => {
-        this.setState({ profile: data });
-        this.setState({ userids: data.users_ID });
+        this.setState({ allprofiles: data });
+        this.setState({ profile: data[0] });
+        this.setState({ userids: data.map((data) => data.users_ID) });
+
         console.log(this.state.profile);
-        console.log(this.state.userids)
+        console.log(this.state.userids);
       })
       .catch((error) => {
         console.log(error.response);
@@ -48,8 +51,13 @@ class Profile extends Component {
             {this.state.dropDownValue}
           </Dropdown.Toggle>
           <Dropdown.Menu>
-            <Dropdown.Item as="button">
-            {userids}
+            <Dropdown.Item
+              as="button"
+              onClick={(e) => this.changeValue(e.target.textContent)}
+            >
+              {Object.keys(userids).map((oneKey, i) => {
+                return <li key={i}>{userids[oneKey]}</li>;
+              })}
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
