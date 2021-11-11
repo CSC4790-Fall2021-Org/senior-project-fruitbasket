@@ -1,6 +1,8 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 
+import RelationshipType from "./RelationshipType";
+
 
 
 class Filter extends React.Component {
@@ -12,16 +14,10 @@ class Filter extends React.Component {
         <>
         <Container className="text-center p-3">
             <h1>Filters</h1>
-
+            
         </Container>
         <Container>
-            <p1>Location
-                <br></br>
-                Age Range</p1>
-            <form>
-            <input id="multi3" class="multi-range" type="range" />
-            </form>
-            <p1>Relationship Type</p1>
+            <RelationshipType></RelationshipType>
         </Container>
         </>
         )

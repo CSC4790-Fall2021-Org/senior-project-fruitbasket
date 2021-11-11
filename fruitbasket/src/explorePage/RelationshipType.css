@@ -1,0 +1,52 @@
+.App {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  .types {
+    margin-top: 0.3rem;
+    
+  }
+  
+  
+.types-list
+    {
+    width: 100%;
+  }
+
+#hor {
+    float: left;
+    padding: 15px; 
+    
+  }
+  .types-list {
+    list-style: none;
+    
+  }
+  
+  .types-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .types-list-item {
+    display: flex;
+    display: inline-block;
+    justify-content: space-between;
+  }
+  
+  
+  .types-list-item label {
+    margin-left: 0.2rem;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .types-list
+    {
+      width: 90%;
+    }
+  }

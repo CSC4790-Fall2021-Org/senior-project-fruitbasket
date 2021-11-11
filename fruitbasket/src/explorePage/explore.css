@@ -37,3 +37,6 @@
   font-size: 20px;
   line-height: 200%;
 }
+#clear{
+  clear: both;
+}
