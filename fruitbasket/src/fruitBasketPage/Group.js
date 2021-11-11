@@ -1,4 +1,3 @@
-import "./profilePage/profile.css";
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -13,12 +12,14 @@ import React from 'react';
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 
+
 import {
     ConversationList,
     Conversation,
     Avatar,
   } from "@chatscope/chat-ui-kit-react";
 import BasketInvites from "./BasketInvites";
+import BasketDropdownUsers from './BasketDropdownUsers';
 
 class Group extends React.Component {
     constructor(props) {

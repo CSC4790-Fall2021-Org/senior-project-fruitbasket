@@ -1,4 +1,3 @@
-import "./profilePage/profile.css";
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -8,7 +7,6 @@ import {
     Route,
     Switch,
   } from 'react-router-dom';
-import BasketUI from "./BasketUI";
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 import {

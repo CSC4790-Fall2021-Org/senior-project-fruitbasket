@@ -5,10 +5,9 @@ import Tab from "react-bootstrap/Tab";
 import Container from "react-bootstrap/Container";
 import Profile from "./profilePage/profile";
 import Explore from "./explorePage/explore";
-import Group from "./Group";
+import Messages from "./messagesPage/Messages";
+import Group from "./fruitBasketPage/Group";
 import Likes from "./Likes";
-import MessagingUI from "./MessagingGroupUI"
-import Messages from "./Messages"
 
 const Header = () => {
   return (

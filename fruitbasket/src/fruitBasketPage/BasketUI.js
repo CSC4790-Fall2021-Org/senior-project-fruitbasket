@@ -1,4 +1,3 @@
-import "./profilePage/profile.css";
 import Card from 'react-bootstrap/Card'
 import { CardGroup } from "react-bootstrap";
 import Row from 'react-bootstrap/Row'
