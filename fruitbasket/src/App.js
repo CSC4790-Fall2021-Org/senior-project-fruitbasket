@@ -7,8 +7,14 @@ import Profile from "./profilePage/profile";
 import Explore from "./explorePage/explore";
 import Group from "./Group";
 import Likes from "./Likes";
-import MessagingUI from "./MessagingGroupUI"
 import Messages from "./Messages"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 const Header = () => {
   return (
