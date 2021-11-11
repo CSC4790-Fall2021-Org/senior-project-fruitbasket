@@ -33,6 +33,7 @@ class BasketUI extends React.Component {
   
     return(
         <div>
+  
             <MessagingGroupUI></MessagingGroupUI>
         </div>
         );  
