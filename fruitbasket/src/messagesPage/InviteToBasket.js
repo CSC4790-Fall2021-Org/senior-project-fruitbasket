@@ -32,7 +32,7 @@ function InviteToBasket() {
             <Container className="text-right p-3">
                 <Row >
                     <Col xs={10} className="block-example border border-primary">
-                        <Conversation name="Patrik"  onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Fruit Basket" lastSenderName="Members: " info="John, Mason, Malik, Maya" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
                         </Conversation>
                     </Col>
