@@ -19,7 +19,7 @@ function BasketInvites() {
     //make basket join requests a fruit shape and have an int for the number of invites
     return (
         <div>
-            <Button onClick={handleShow}>
+            <Button onClick={handleShow} variant="danger">
             Basket Join Requests
             </Button>
             
