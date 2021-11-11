@@ -9,7 +9,6 @@ import {
     Route,
     Switch,
   } from 'react-router-dom';
-import BasketDropdownUsers from "./fruitBasketPage/BasketDropdownUsers";
 
 const Likes = () => {
     return(

@@ -11,6 +11,8 @@ import BasketUI from "./BasketUI";
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import BasketMembers from './BasketMembers'
+
 
 
 import {
@@ -19,7 +21,6 @@ import {
     Avatar,
   } from "@chatscope/chat-ui-kit-react";
 import BasketInvites from "./BasketInvites";
-import BasketDropdownUsers from './BasketDropdownUsers';
 
 class Group extends React.Component {
     constructor(props) {
@@ -65,8 +66,9 @@ class Group extends React.Component {
             
             {!showing ?
                 <div>
-                    <div style={{ display: 'inline-block', padding: 5 }}><Button onClick={() => this.setState({ showing: true })}>Back to Baskets</Button></div>
-                    <div style={{ display: 'inline-block' }}><BasketInvites ></BasketInvites></div>
+                    <div style={{ display: 'inline-block', padding: 2 }}><Button onClick={() => this.setState({ showing: true })}>Back to Baskets</Button></div>
+                    <div style={{ display: 'inline-block', padding: 2 }}><BasketInvites ></BasketInvites></div>
+                    <div style={{ display: 'inline-block', padding: 2 }}><BasketMembers></BasketMembers></div>
                     <BasketUI></BasketUI>
                 </div>
             : null

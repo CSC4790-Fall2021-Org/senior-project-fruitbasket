@@ -15,6 +15,7 @@ import {
     Avatar,
   } from "@chatscope/chat-ui-kit-react";
 import MessagingSingleUI from "./MessagingSingleUI";
+import InviteToBasket from './InviteToBasket';
 
 class Messages extends React.Component {
     constructor(props) {
@@ -74,7 +75,8 @@ class Messages extends React.Component {
             
             {!showing ?
                 <div>
-                    <Button variant="primary" onClick={() => this.setState({ showing: true })}>Back to Messages</Button>{' '}
+                    <div style={{ display: 'inline-block' , padding: 5}}><Button  onClick={() => this.setState({ showing: true })}>Back to Messages</Button>{' '}</div>
+                    <div style={{ display: 'inline-block' }}><InviteToBasket></InviteToBasket></div>
                     <MessagingSingleUI></MessagingSingleUI>
                 </div>
             : null
