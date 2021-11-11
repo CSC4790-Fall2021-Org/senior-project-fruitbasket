@@ -8,7 +8,20 @@ class Login extends Component {
     constructor() {
         super();
         this.state = {
-          username: ""
+          users_ID: "",
+          userName: "", 
+          first_Name:"",
+          last_Name:"",
+          bio:"",
+          user_Password:"",
+          user_Email:"",
+          phone_Number:"",
+          date_Of_Birth:"",
+          number_Of_Matches:"",
+          number_Of_Baskets:"",
+          city:"",
+          age:"",
+          preference_ID: ""
         };
       };
   render() {
