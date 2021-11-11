@@ -25,6 +25,7 @@ class Login extends Component {
       age: "",
       preference_ID: "",
     };
+    this.onChange = this.onChange.bind(this)
   }
 
   onChange = (e) => {
@@ -50,6 +51,7 @@ class Login extends Component {
           number_Of_Baskets: this.number_Of_Baskets,
           city: this.city,
           age: this.age,
+          preference_ID: this.preference_ID
         }
       )
       .then((response) => {
@@ -72,6 +74,7 @@ class Login extends Component {
       number_Of_Baskets,
       city,
       age,
+      preference_ID
     } = this.state;
     return (
       <>
@@ -113,7 +116,7 @@ class Login extends Component {
                   />
                 </Row>
                 <Row>
-                  <label for="usersName">userName</label>
+                  <label for="userName">userName</label>
                   <input
                     type="text"
                     name="userName"
@@ -217,6 +220,15 @@ class Login extends Component {
                     type="text"
                     name="age"
                     value={age}
+                    onChange={this.onChange}
+                  />
+                </Row>
+                <Row>
+                  <label for="preference_ID">preference_ID</label>
+                  <input
+                    type="text"
+                    name="preference_ID"
+                    value={preference_ID}
                     onChange={this.onChange}
                   />
                 </Row>
