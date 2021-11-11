@@ -19,7 +19,7 @@ function BasketInvites() {
     //make basket join requests a fruit shape and have an int for the number of invites
     return (
         <div>
-            <Button onClick={handleShow}>
+            <Button variant="warning" onClick={handleShow}>
             Basket Members
             </Button>
             
@@ -49,7 +49,7 @@ function BasketInvites() {
                 </Row>
 
                 <Row >
-                    <Col xs={10} className="block-example border border-primary">
+                    <Col xs={10} className="block-example border border-secondary">
                         <Conversation name="Patrik" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
                         </Conversation>
@@ -67,7 +67,7 @@ function BasketInvites() {
                 </Row>
 
                 <Row >
-                    <Col xs={10} className="block-example border border-primary">
+                    <Col xs={10} className="block-example border border-success">
                         <Conversation name="Patrik" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
                         </Conversation>
@@ -85,7 +85,7 @@ function BasketInvites() {
                 </Row>
 
                 <Row >
-                    <Col xs={10} className="block-example border border-primary">
+                    <Col xs={10} className="block-example border border-danger">
                         <Conversation name="Patrik" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
                         </Conversation>
@@ -103,7 +103,7 @@ function BasketInvites() {
                 </Row>
 
                 <Row >
-                    <Col xs={10} className="block-example border border-primary">
+                    <Col xs={10} className="block-example border border-warning">
                         <Conversation name="Patrik" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
                         </Conversation>
