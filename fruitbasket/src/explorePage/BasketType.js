@@ -35,7 +35,7 @@ const BasketType = () => {
 
   return (
     <div>
-      <h3>Select Relationship Types Interested in</h3>
+      <h3>Select Basket Types Interested in</h3>
       <ul className="types-list">
         {types.map(({name}, index) => {
           return (
