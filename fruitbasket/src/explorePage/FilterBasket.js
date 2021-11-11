@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 
-import RelationshipType from "./RelationshipType";
+import BasketType from "./BasketType";
 
 
 
-class Filter extends React.Component {
+class FilterBasket extends React.Component {
     constructor(props) { 
         super(props);
      };
@@ -17,11 +17,11 @@ class Filter extends React.Component {
             
         </Container>
         <Container>
-            <RelationshipType></RelationshipType>
+            <BasketType></BasketType>
         </Container>
         </>
         )
      }
 }
 
-export default Filter;
+export default FilterBasket;
