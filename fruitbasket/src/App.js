@@ -2,7 +2,7 @@ import "./App.css";
 import logo from "./fruits.svg";
 import Container from "react-bootstrap/Container";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Login } from "./Login";
+import Login from "./Login";
 import { Header } from "./Header";
 
 function App() {
