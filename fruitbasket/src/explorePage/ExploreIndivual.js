@@ -51,7 +51,7 @@ class ExploreIndivual extends React.Component {
         return(
             
         <>
-        <Container className="text-center p-3">
+        <Container className="text-center p-3" id="clear">
             <h1> Recommended For You</h1>
         </Container>
         

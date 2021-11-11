@@ -10,7 +10,8 @@ import yosemite2 from './yosemitePic2.jfif';
 import yosemite3 from './yosemitePic3.jfif';
 import ExploreIndivual from "./ExploreIndivual";
 import ExploreBasket from "./ExploreBasket";
-import Filter from "./Filter";
+import FilterIndivudal from "./FilterIndividual";
+import FilterBasket from "./FilterBasket";
 
 
 const Explore = () => {
@@ -37,7 +38,7 @@ const Explore = () => {
 
     return(
         <>
-        <Filter></Filter>
+        <FilterIndivudal></FilterIndivudal>
         <ExploreIndivual
             name= 'John Smith'
             ag= '79'
@@ -50,6 +51,7 @@ const Explore = () => {
             src2= "https://ichef.bbci.co.uk/news/999/cpsprodpb/15951/production/_117310488_16.jpg"
             src3= "https://play-lh.googleusercontent.com/proxy/2tj1HTTkxfLUCHMYCMY7Ik_u9Dv-ctrQ7tteluo8MkL9bUzSFutbEcvkGroJxU6PTS84IHjfzCYjRsCflXcZ5k_CV2OAD2Al4i_fUCrb6cBVNvtB4TZhu97Z=w720-h405-rw"
         ></ExploreIndivual>
+        <FilterBasket></FilterBasket>
         <ExploreBasket></ExploreBasket>
         </>
     );
