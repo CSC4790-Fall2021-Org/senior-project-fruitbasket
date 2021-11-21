@@ -62,7 +62,7 @@ function InviteToBasket() {
                 </Row>
                 <Row >
                     <Col xs={10} className="block-example border border-warning">
-                        <Conversation name="Kiwi"  lastSenderName="Members: " info="Iris, Aurora" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Kiwis"  lastSenderName="Members: " info="Iris, Aurora" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
