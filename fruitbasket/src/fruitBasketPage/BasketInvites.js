@@ -33,7 +33,7 @@ function BasketInvites() {
                 <Row >
                     <Col xs={9} className="block-example border border-primary">
                         <Conversation name="Patrik" lastSenderName="Patrik" info="You up?" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
-                        <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                        <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
                     <Col>
@@ -58,7 +58,7 @@ function BasketInvites() {
                 <Row >
                     <Col xs={9} className="block-example border border-secondary">
                         <Conversation name="Patrik" lastSenderName="Patrik" info="You up?" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
-                        <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                        <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
                     <Col>
@@ -83,7 +83,7 @@ function BasketInvites() {
                 <Row>
                     <Col xs={9} className="block-example border border-success">
                         <Conversation name="Patrik" lastSenderName="Patrik" info="You up?" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
-                        <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                        <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
                     <Col>
@@ -108,7 +108,7 @@ function BasketInvites() {
                 <Row >
                     <Col xs={9} className="block-example border border-danger">
                         <Conversation name="Patrik" lastSenderName="Patrik" info="You up?" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
-                        <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                        <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
                     <Col>
@@ -133,7 +133,7 @@ function BasketInvites() {
                 <Row >
                     <Col className="block-example border border-warning" xs={9}>
                         <Conversation name="Patrik" lastSenderName="Patrik" info="You up?" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
-                        <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                        <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
                     <Col>
@@ -158,7 +158,7 @@ function BasketInvites() {
                 <Row >
                     <Col className="block-example border border-info" xs={9}>
                         <Conversation name="Patrik" lastSenderName="Patrik" info="You up?" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
-                        <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                        <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
                     <Col>

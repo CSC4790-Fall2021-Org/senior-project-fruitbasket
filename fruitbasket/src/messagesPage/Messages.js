@@ -36,36 +36,36 @@ class Messages extends React.Component {
             height: "500px"
             }}>
                 <ConversationList>        
-                    <Conversation name="Lilly" lastSenderName="Lilly" info="You up?" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Lilly" />
+                    <Conversation name="Lilly" lastSenderName="Lilly" info="Hello" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Lilly" />
                     </Conversation>
                     
-                    <Conversation name="Joe" lastSenderName="Joe" info="You up?" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Joe" />
+                    <Conversation name="Joe" lastSenderName="Joe" info="Hello" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Joe" />
                     </Conversation>
                     
-                    <Conversation name="Emily" lastSenderName="Emily" info="You up?" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Emily" />
+                    <Conversation name="Emily" lastSenderName="Emily" info="Hello" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Emily" />
                     </Conversation>
                     
-                    <Conversation name="Kai" lastSenderName="Kai" info="You up?" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Kai" />
+                    <Conversation name="Kai" lastSenderName="Kai" info="Hello" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Kai" />
                     </Conversation>
                                 
-                    <Conversation name="Akane" lastSenderName="Akane" info="You up?" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Akane" />
+                    <Conversation name="Akane" lastSenderName="Akane" info="Hello" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Akane" />
                     </Conversation>
                                         
-                    <Conversation name="Eliot" lastSenderName="Eliot" info="You up?" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Eliot" />
+                    <Conversation name="Eliot" lastSenderName="Eliot" info="Hello" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Eliot" />
                     </Conversation>
                                                         
-                    <Conversation name="Zoe" lastSenderName="Zoe" info="You up?" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Zoe" />
+                    <Conversation name="Zoe" lastSenderName="Zoe" info="Hello" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Zoe" />
                     </Conversation>
                                                                     
-                    <Conversation name="Patrik" lastSenderName="Patrik" info="You up?" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                    <Conversation name="Patrik" lastSenderName="Patrik" info="Hello" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                     </Conversation>
                     
                 </ConversationList>

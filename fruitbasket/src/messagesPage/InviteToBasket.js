@@ -32,8 +32,8 @@ function InviteToBasket() {
             <Container className="text-right p-3">
                 <Row >
                     <Col xs={10} className="block-example border border-success">
-                        <Conversation name="Fruit Basket" lastSenderName="Members: " info="John, Mason, Malik, Maya" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
-                        <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                        <Conversation name="Apples" lastSenderName="Members: " info="John, Mason, Malik, Maya" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
                     <Col>
@@ -42,8 +42,8 @@ function InviteToBasket() {
                 </Row>
                 <Row >
                     <Col xs={10} className="block-example border border-primary">
-                        <Conversation name="Patrik"  onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
-                        <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                        <Conversation name="Oranges"  lastSenderName="Members: " info="Bob, Ross, Joe, Alison" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
                     <Col>
@@ -52,8 +52,8 @@ function InviteToBasket() {
                 </Row>
                 <Row >
                     <Col xs={10} className="block-example border border-danger">
-                        <Conversation name="Patrik"  onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
-                        <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                        <Conversation name="Watermelons"  lastSenderName="Members: " info="Jack, Jill, Howard" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
                     <Col>
@@ -62,8 +62,8 @@ function InviteToBasket() {
                 </Row>
                 <Row >
                     <Col xs={10} className="block-example border border-warning">
-                        <Conversation name="Patrik"  onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
-                        <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name="Patrik" />
+                        <Conversation name="Kiwi"  lastSenderName="Members: " info="Iris, Aurora" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
                     <Col>

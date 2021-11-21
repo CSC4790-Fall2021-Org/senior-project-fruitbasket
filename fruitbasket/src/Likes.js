@@ -15,11 +15,11 @@ const Likes = () => {
         <div>
             <CardGroup>
                 <Card>
-                    <Card.Img variant="top" src="https://www.looper.com/img/gallery/things-only-adults-notice-in-shrek/intro-1573597941.jpg" />
+                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" />
                     <Card.Body>
                     <Card.Title>John Quimbo</Card.Title>
                     <Card.Text>
-                        You know donkey things are more than they seem.
+                        Howdy
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
@@ -27,11 +27,11 @@ const Likes = () => {
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://www.looper.com/img/gallery/things-only-adults-notice-in-shrek/intro-1573597941.jpg" />
+                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" />
                     <Card.Body>
                     <Card.Title>Mason Cooper</Card.Title>
                     <Card.Text>
-                        Ogres are like onions. Onions have layers. Ogres have layers{' '}
+                        Hello! How is it going?{' '}
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
@@ -39,11 +39,11 @@ const Likes = () => {
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://www.looper.com/img/gallery/things-only-adults-notice-in-shrek/intro-1573597941.jpg" />
+                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" />
                     <Card.Body>
                     <Card.Title>Malik Cunningham</Card.Title>
                     <Card.Text>
-                        What are you doing in my swamp?!
+                        Hey! Let's match!
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>

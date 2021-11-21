@@ -41,20 +41,20 @@ class Group extends React.Component {
             height: "500px"
             }}>
                 <ConversationList>        
-                    <Conversation name="Peaches" lastSenderName="Peaches" info="Yes i can do it for you" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://cdn.shopify.com/s/files/1/1061/1924/products/Peach_Emoji_large.png?v=1571606034" name="Peaches!" />
+                    <Conversation name="Apples" lastSenderName="Joe" info="This app is great" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn1.iconfinder.com/data/icons/users-61/32/user-07-512.png"  name="Peaches!" />
                     </Conversation>
                     
-                    <Conversation name="Eggplants" lastSenderName="Eggplants" info="Yes i can do it for you" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://cdn.shopify.com/s/files/1/1061/1924/products/Eggplant_Emoji_large.png?v=1571606066" name="Eggplants!" />
+                    <Conversation name="Oranges" lastSenderName="Alison" info="Hey everyone!" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn1.iconfinder.com/data/icons/users-61/32/user-07-512.png"  />
                     </Conversation>
                     
-                    <Conversation name="Bananas" lastSenderName="Bananas" info="Yes i can do it for you" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/118/banana_1f34c.png" name="Bananas!" />
+                    <Conversation name="Watermelons" lastSenderName="Mason" info="How are you all?" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn1.iconfinder.com/data/icons/users-61/32/user-07-512.png" name="Bananas!" />
                     </Conversation>
                     
-                    <Conversation name="Pineapples" lastSenderName="Pineapples" info="Yes i can do it for you" onClick={() => this.setState({ showing: !showing })}>
-                    <Avatar src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/81/pineapple_1f34d.png" name="Pineapples!" />
+                    <Conversation name="Kiwis" lastSenderName="Maya" info="I am doing well" onClick={() => this.setState({ showing: !showing })}>
+                    <Avatar src="https://cdn1.iconfinder.com/data/icons/users-61/32/user-07-512.png"  />
                     </Conversation>
                                 
                     

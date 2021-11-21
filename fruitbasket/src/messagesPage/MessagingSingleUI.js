@@ -39,7 +39,7 @@ const MessagingSingleUI = () => {
                   direction: "incoming",
                   position: "single"
                 }}>
-                      <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name={"Joe"} />
+                      <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name={"Joe"} />
                     </Message>
                     
                     <Message model={{
@@ -78,7 +78,7 @@ const MessagingSingleUI = () => {
                   direction: "incoming",
                   position: "last"
                 }}>
-                      <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name={"Joe"} />
+                      <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name={"Joe"} />
                     </Message>
                     
                     <Message model={{
@@ -124,7 +124,7 @@ const MessagingSingleUI = () => {
                   direction: "incoming",
                   position: "last"
                 }}>
-                      <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name={"Joe"} />
+                      <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name={"Joe"} />
                     </Message>
                                       
                     <MessageSeparator content="Saturday, 31 November 2019" />
@@ -136,7 +136,7 @@ const MessagingSingleUI = () => {
                   direction: "incoming",
                   position: "single"
                 }}>
-                      <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name={"Joe"} />
+                      <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name={"Joe"} />
                     </Message>
                     
                     <Message model={{
@@ -175,7 +175,7 @@ const MessagingSingleUI = () => {
                   direction: "incoming",
                   position: "last"
                 }}>
-                      <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name={"Joe"} />
+                      <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name={"Joe"} />
                     </Message>
                     
                     <Message model={{
@@ -221,7 +221,7 @@ const MessagingSingleUI = () => {
                   direction: "incoming",
                   position: "last"
                 }}>
-                      <Avatar src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrek-forever-after-1587549453.jpg?crop=0.676xw:0.901xh;0.0969xw,0&resize=480:*" name={"Joe"} />
+                      <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name={"Joe"} />
                     </Message>
                     
                   </MessageList>        
