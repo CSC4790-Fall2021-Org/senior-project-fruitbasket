@@ -32,7 +32,7 @@ function BasketInvites() {
             <Container className="text-right p-3">
                 <Row >
                     <Col xs={10} className="block-example border border-primary">
-                        <Conversation name="Patrik" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Joe" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
@@ -50,7 +50,7 @@ function BasketInvites() {
 
                 <Row >
                     <Col xs={10} className="block-example border border-secondary">
-                        <Conversation name="Patrik" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Alex" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
@@ -68,7 +68,7 @@ function BasketInvites() {
 
                 <Row >
                     <Col xs={10} className="block-example border border-success">
-                        <Conversation name="Patrik" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="John" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
@@ -86,7 +86,7 @@ function BasketInvites() {
 
                 <Row >
                     <Col xs={10} className="block-example border border-danger">
-                        <Conversation name="Patrik" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Maya" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
@@ -104,7 +104,7 @@ function BasketInvites() {
 
                 <Row >
                     <Col xs={10} className="block-example border border-warning">
-                        <Conversation name="Patrik" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Mason" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
