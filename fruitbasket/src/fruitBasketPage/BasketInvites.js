@@ -32,7 +32,7 @@ function BasketInvites() {
             <Container className="text-right p-3">
                 <Row >
                     <Col xs={9} className="block-example border border-primary">
-                        <Conversation name="Patrik" lastSenderName="Haley" info="Hello! I want to join your group" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Haley"  info="Hello! I want to join your group" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
@@ -57,7 +57,7 @@ function BasketInvites() {
 
                 <Row >
                     <Col xs={9} className="block-example border border-secondary">
-                        <Conversation name="Patrik" lastSenderName="Kyle" info="Hello! I want to join your group" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Kyle" info="Hello! I want to join your group" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
@@ -82,7 +82,7 @@ function BasketInvites() {
 
                 <Row>
                     <Col xs={9} className="block-example border border-success">
-                        <Conversation name="Patrik" lastSenderName="Ally" info="Hello! I want to join your group" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Ally"  info="Hello! I want to join your group" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
@@ -107,7 +107,7 @@ function BasketInvites() {
 
                 <Row >
                     <Col xs={9} className="block-example border border-danger">
-                        <Conversation name="Patrik" lastSenderName="Mary" info="Hello! I want to join your group" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Mary"  info="Hello! I want to join your group" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
@@ -132,7 +132,7 @@ function BasketInvites() {
 
                 <Row >
                     <Col className="block-example border border-warning" xs={9}>
-                        <Conversation name="Patrik" lastSenderName="Joseph" info="Hello! I want to join your group" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
+                        <Conversation name="Joseph"  info="Hello! I want to join your group" onClick={ () => alert("Pretend this is showing the profile you clicked on")}>
                         <Avatar src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" name="Patrik" />
                         </Conversation>
                     </Col>
