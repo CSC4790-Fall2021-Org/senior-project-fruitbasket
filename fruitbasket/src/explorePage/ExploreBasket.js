@@ -32,7 +32,7 @@ class ExploreGroup extends React.Component {
             looking1: this.props.looking1,
             facts1: this.props.facts1,
 
-            id2: 0,
+            id2: 1,
             name2 : this.props.name2,
             age2 : this.props.age2,
             city2 : this.props.city2,
@@ -44,7 +44,7 @@ class ExploreGroup extends React.Component {
             looking2: this.props.looking2,
             facts2: this.props.facts2,
 
-            id3: 0,
+            id3: 2,
             name3 : this.props.name3,
             age3 : this.props.age3,
             city3 : this.props.city3,
@@ -73,28 +73,28 @@ class ExploreGroup extends React.Component {
             relationships1 : response.relationships,
             looking1: response.data.looking,
             facts1: response.data.facts,
-          }, () => console.log(this.state.name1))
+          }, () => console.log(this.state.id1))
         })
 
-        const url2 = 'https://fruitbasketapi20211202024943.azurewebsites.net/api/baskets/'+(this.state.id1+1);
+        const url2 = 'https://fruitbasketapi20211202024943.azurewebsites.net/api/baskets/'+(this.state.id2+1);
         axios.get(url2, {
         })
-        .then((response) => {
+        .then((response2) => {
           this.setState({
-            id2: response.data.baskets_ID,
-            name2 : response.data.baskets_Name,
-            age2 : response.data.age,
-            city2 : response.data.city,
-            selfSummary2 : response.data.selfSummary,
-            gender2 : response.data.gender,
-            orientation2 : response.data.orientation,
-            relationships2 : response.relationships,
-            looking2: response.data.looking,
-            facts2: response.data.facts,
-          }, () => console.log(this.state.name2))
+            id2: response2.data.baskets_ID,
+            name2 : response2.data.baskets_Name,
+            age2 : response2.data.age,
+            city2 : response2.data.city,
+            selfSummary2 : response2.data.selfSummary,
+            gender2 : response2.data.gender,
+            orientation2 : response2.data.orientation,
+            relationships2 : response2.relationships,
+            looking2: response2.data.looking,
+            facts2: response2.data.facts,
+          }, () => console.log(this.state.id2))
         })
 
-        const url3 = 'https://fruitbasketapi20211202024943.azurewebsites.net/api/baskets/'+(this.state.id1+1);
+        const url3 = 'https://fruitbasketapi20211202024943.azurewebsites.net/api/baskets/'+(this.state.id3+1);
         axios.get(url3, {
         })
         .then((response) => {
@@ -109,7 +109,7 @@ class ExploreGroup extends React.Component {
             relationships3 : response.relationships,
             looking3: response.data.looking,
             facts3: response.data.facts,
-          }, () => console.log(this.state.name3))
+          }, () => console.log(this.state.id3))
         })
      };
      render() {
@@ -132,53 +132,6 @@ class ExploreGroup extends React.Component {
                 </Button>
         </Container>
         <div className="rows">
-        <Container className="w-10 block-example border border-dark rounded shadow-lg p-5 text-center" id="bio">
-
-        <Container className="d-flex justify-content-around mt-5 profileheader text-center" id="bio">
-        {this.state.name1} | {this.state.age1} | {this.state.city1}
-
-        </Container>
-
-        <img
-        className="d-block w-10 p-5 text-center"
-        src= {this.state.src1}
-        alt="First slide"
-        height= "500"
-        class="center"
-        />
-
-        <Container className="bio text-center" id="center" >
-        <Col>
-            <ul className="rightbody">
-                <li class="b1" >
-                {this.state.gender1} | {this.state.orientation1} | {this.state.relationships1}
-                </li>
-
-                <li class="b2">
-                {this.state.looking1}
-                </li>
-
-                <li class="b3">
-                {this.state.facts1}
-                </li>
-
-            </ul>
-        </Col>
-        <Row>
-            <Col sm={35}>
-                <h1>My self-summary</h1>
-                <p1 className="bodytext">
-                {this.state.selfSummary1}
-                </p1>
-            </Col>
-
-            <Col sm={4} className="pl-2">
-            
-
-            </Col>
-        </Row>
-        </Container>
-        </Container>
 
         <Container className="w-10 block-example border border-dark rounded shadow-lg p-5 text-center" id="bio">
 
@@ -227,6 +180,57 @@ class ExploreGroup extends React.Component {
         </Row>
         </Container>
         </Container>
+
+
+        <Container className="w-10 block-example border border-dark rounded shadow-lg p-5 text-center" id="bio">
+
+        <Container className="d-flex justify-content-around mt-5 profileheader text-center" id="bio">
+        {this.state.name1} | {this.state.age1} | {this.state.city1}
+
+        </Container>
+
+        <img
+        className="d-block w-10 p-5 text-center"
+        src= {this.state.src1}
+        alt="First slide"
+        height= "500"
+        class="center"
+        />
+
+        <Container className="bio text-center" id="center" >
+        <Col>
+            <ul className="rightbody">
+                <li class="b1" >
+                {this.state.gender1} | {this.state.orientation1} | {this.state.relationships1}
+                </li>
+
+                <li class="b2">
+                {this.state.looking1}
+                </li>
+
+                <li class="b3">
+                {this.state.facts1}
+                </li>
+
+            </ul>
+        </Col>
+        <Row>
+            <Col sm={35}>
+                <h1>My self-summary</h1>
+                <p1 className="bodytext">
+                {this.state.selfSummary1}
+                </p1>
+            </Col>
+
+            <Col sm={4} className="pl-2">
+            
+
+            </Col>
+        </Row>
+        </Container>
+        </Container>
+
+       
 
         <Container className="w-10 block-example border border-dark rounded shadow-lg p-5 text-center" id="bio">
 
