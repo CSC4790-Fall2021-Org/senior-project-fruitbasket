@@ -87,32 +87,46 @@ class Profile extends Component {
           <Row>
             <div className="col-md-4">
               <Card className="text-center">
-                <h3> Username </h3>
-                <h3>{profile.users_Name} </h3>
-              </Card>
-            </div>
-            <div className="col-md-4">
-              <Card className="text-center">
-                <h3> Phone Number </h3>
-                <h3>{profile.phone_Number} </h3>
-                <Form>
-                  <input></input>
-                  <Button>update</Button>
-                </Form>
-              </Card>
-            </div>
-            <div className="col-md-4">
-              <Card className="text-center">
                 <h3> Age </h3>
                 <h3>{profile.age} </h3>
               </Card>
             </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> City </h3>
+                <h3>{profile.city} </h3>
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> Doing </h3>
+                <h3>{profile.doing} </h3>
+              </Card>
+            </div>
           </Row>
+        </div>
 
-          <Card className="m-5">
-            <h1> BIO</h1>
-            <p>{profile.bio}</p>
-          </Card>
+        <div className="container-fluid text-center pt-5">
+          <Row>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> Good At </h3>
+                <h3>{profile.good_At} </h3>
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> Self Summary </h3>
+                <h3>{profile.self_Summary} </h3>
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> Style </h3>
+                <h3>{profile.style} </h3>
+              </Card>
+            </div>
+          </Row>
         </div>
       </>
     );
