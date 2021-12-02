@@ -29,18 +29,18 @@ class Profile extends Component {
   putValue(val)
   {
       const username = { userName: 'test put request' };
-      axios.put('https://fruitbasketapi20211021012825.azurewebsites.net/api/users', username)
+      axios.put('https://fruitbasketapi20211202024943.azurewebsites.net/api/users', username)
   }
 
   componentDidMount() {
     const url =
-      "https://fruitbasketapi20211021012825.azurewebsites.net/api/users";
+      "https://fruitbasketapi20211202024943.azurewebsites.net/api/users";
     axios
       .get(url)
       .then((response) => response.data)
       .then((data) => {
         this.setState({ allprofiles: data });
-        this.setState({ username: data[0].userName });
+        this.setState({ username: data[0].users_Name });
         this.setState({ profile: data[0] });
         this.setState({ userids: data.map((data) => data.users_ID) });
 
@@ -82,24 +82,15 @@ class Profile extends Component {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIGa9vRdOR3iuiRI9taJagM8cr-y2LhntDw&usqp=CAU"
           ></Image>
         </div>
+
         <div className="container-fluid text-center">
           <Row>
-
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Username </h3>
-                <h3>{username} </h3>
-                <Form>
-                  <input></input>
-                  <Button 
-                  onClick={(e) => this.putValue(e.target.textContent)}>
-                  update
-                  </Button>
-
-                </Form>
+                <h3>{profile.users_Name} </h3>
               </Card>
             </div>
-
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Phone Number </h3>
@@ -114,10 +105,6 @@ class Profile extends Component {
               <Card className="text-center">
                 <h3> Age </h3>
                 <h3>{profile.age} </h3>
-                <Form>
-                  <input></input>
-                  <Button>update</Button>
-                </Form>
               </Card>
             </div>
           </Row>
@@ -125,10 +112,6 @@ class Profile extends Component {
           <Card className="m-5">
             <h1> BIO</h1>
             <p>{profile.bio}</p>
-            <Form>
-              <input></input>
-              <Button>update</Button>
-            </Form>
           </Card>
         </div>
       </>
