@@ -28,7 +28,6 @@ class ExploreIndivual extends React.Component {
             src1 : this.props.src1,
             src2 : this.props.src2,
             src3 : this.props.src3
-
         };
      };
      
@@ -45,7 +44,10 @@ class ExploreIndivual extends React.Component {
             selfSummary: response.data.self_Summary,
             doing: response.data.doing,
             goodat: response.data.good_At,
-            style: response.data.style
+            style: response.data.style,
+            src1: response.data.src1,
+            src2: response.data.src2,
+            src3: response.data.src3
           }, () => console.log(this.state.name))
         })
      };
@@ -99,7 +101,7 @@ class ExploreIndivual extends React.Component {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src= {"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}
+                src= {this.state.src3}
                 alt="Third slide"
                 />
             </Carousel.Item>
