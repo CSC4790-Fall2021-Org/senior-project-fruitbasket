@@ -17,6 +17,7 @@ class ExploreIndivual extends React.Component {
     constructor(props) { 
         super(props);
         this.state = {
+            id: 0,
             name : this.props.name,
             age : this.props.age,
             city : this.props.city,
@@ -27,24 +28,26 @@ class ExploreIndivual extends React.Component {
             src1 : this.props.src1,
             src2 : this.props.src2,
             src3 : this.props.src3
+
         };
      };
      
      handleChange = () => {
-        this.setState((previousState) => {
-            return {
-                name: "Yosemite",  
-                age: '1098',
-                city: 'Yosemite, CA',
-                selfSummary: 'Park',
-                doing: 'being a place',
-                goodat: 'having sun, air, and grass',
-                style: 'lots of waterfalls',
-                src1: yosemite,
-                src2: yosemite2,
-                src3: yosemite3
-            };
-        });
+        const url = 'https://fruitbasketapi20211202024943.azurewebsites.net/api/users/'+(this.state.id+1);
+        axios.get(url, {
+        })
+        .then((response) => {
+          this.setState({
+            id: response.data.users_ID,
+            name: response.data.users_Name,
+            age: response.data.age,
+            city: response.data.city,
+            selfSummary: response.data.self_Summary,
+            doing: response.data.doing,
+            goodat: response.data.good_At,
+            style: response.data.style
+          }, () => console.log(this.state.name))
+        })
      };
      render() {
         console.log(this.props);

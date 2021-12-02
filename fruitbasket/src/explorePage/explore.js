@@ -41,7 +41,7 @@ const Explore = () => {
         <FilterIndivudal></FilterIndivudal>
         <ExploreIndivual
             name= 'John Smith'
-            ag= '32'
+            age= '32'
             city= 'Villanova, PA'
             selfSummary= '.'
             doing= 'I am a computer programmer.'
