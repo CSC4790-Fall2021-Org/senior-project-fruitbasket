@@ -16,14 +16,19 @@ class Profile extends Component {
       profile: [],
       userids: [],
       dropDownValue: "Select User",
-      currentid: "000001",
-
       username: [],
     };
   }
   changeValue(text) {
+    const url =
+      "https://fruitbasketapi20211202024943.azurewebsites.net/api/users";
     this.setState({ dropDownValue: text });
-    this.setState({ currentid: text });
+    axios.get(url, {
+    })
+    .then((response) => response.data)
+    .then((data) => {
+        this.setState({ profile: data[text] });
+    })
   }
 
   componentDidMount() {
