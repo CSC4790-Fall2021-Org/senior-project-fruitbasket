@@ -20,21 +20,6 @@ const Explore = () => {
         
      };
     const [values, setValues] = useState(initialValues);
-    const handleChange = () => {                
-        setValues({
-          name: "Yosemite",  
-          age: '1098',
-          city: 'Yosemite, CA',
-          selfSummary: 'Park',
-          doing: 'being a place',
-          goodat: 'having sun, air, and grass',
-          style: 'lots of waterfalls',
-          src1: yosemite,
-          src2: yosemite2,
-          src3: yosemite3
-        });
-
-    };
 
     return(
         <>
@@ -51,7 +36,41 @@ const Explore = () => {
             src3= "https://play-lh.googleusercontent.com/proxy/2tj1HTTkxfLUCHMYCMY7Ik_u9Dv-ctrQ7tteluo8MkL9bUzSFutbEcvkGroJxU6PTS84IHjfzCYjRsCflXcZ5k_CV2OAD2Al4i_fUCrb6cBVNvtB4TZhu97Z=w720-h405-rw"
         ></ExploreIndivual>
         <FilterBasket></FilterBasket>
-        <ExploreBasket></ExploreBasket>
+        <ExploreBasket 
+            id="0"
+            name1="Thomas Adams"
+            age1= '28'
+            city1= 'San Francisco, CA'
+            selfSummary1= 'I work in the tech industry'
+            src1= {"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}
+            gender1="Bigender"
+            orientation1= "Queer"
+            relationships1= "Polyamorous"
+            looking1= "A nice group of peopl"
+            facts1="I have two dogs"
+            id2="1"
+            name2="John Washington"
+            age2= "32"
+            city2="Richmond, VA"
+            selfSummary2="I work as a doctor"
+            src2 = {"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}
+            gender2 = "Male"
+            orientation2 = "Straight"
+            relationships2="Polyamorous"
+            looking2= "Someone I share interests with"
+            facts2="I have a lizard"
+            id3="2"
+            name3="George Jefferson" 
+            age3= '52'
+            city3= 'New York, NY'
+            selfSummary3= 'I work as a banker'
+            src3= {"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}
+            gender3="Male"
+            orientation3="Bisexual"
+            relationships3="Polyamorous"
+            looking3="Someone to get old with"
+            facts3="I have chihuahua"
+        ></ExploreBasket>
         </>
     );
 };

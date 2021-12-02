@@ -147,6 +147,8 @@ class ExploreIndivual extends React.Component {
                 </Row>
             </Container>
         </Container>
+
+        
         </>
         )
      }
