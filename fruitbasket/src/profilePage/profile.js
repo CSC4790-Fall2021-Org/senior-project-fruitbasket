@@ -79,6 +79,27 @@ class Profile extends Component {
 
         <div className="container-fluid text-center pt-5">
           <Row>
+            <div className="col-md-2">
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> User ID </h3>
+                <h3> {profile.users_ID}</h3>
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> SRC2 </h3>
+                <h3> {profile.users_Name} </h3>
+              </Card>
+            </div>
+            <div className="col-md-2">
+            </div>
+          </Row>
+        </div>
+
+        <div className="container-fluid text-center pt-5">
+          <Row>
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> SRC1 </h3>
