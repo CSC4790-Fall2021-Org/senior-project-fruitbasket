@@ -2,22 +2,13 @@ import { useState } from "react";
 import "./RelationshipType.css";
 
 export const types = [
-    { name: "Women" },
-    { name: "Men" },
-    { name: "Couples" },
-    { name: "Three musketeers" },
-    { name: "Hates avacados" },
-    { name: "Homies" },
-    { name: "Watch party" },
-    { name: "Friendship" },
-    { name: "Casual" },
-    { name: "Serious" },
-    { name: "Friends with benefits" },
-    { name: "Debauch" },
-    { name: "Dog Walking" },
-    { name: "Offensive linemen" },
-    { name: "Box of crayons" },
-    { name: "Long distance" }
+  { name: "Women" },
+  { name: "Men" },
+  { name: "Man + Woman couple" },
+  { name: "Gender Fluid" },
+  { name: "Pangender" },
+  { name: "Non-binary" },
+  { name: "Androgynous" },
   ];
 const BasketType = () => {
   const [checkedState, setCheckedState] = useState(

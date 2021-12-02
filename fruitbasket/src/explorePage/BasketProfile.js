@@ -30,23 +30,25 @@ class BasketProfile extends React.Component {
     render() {
         return(
             <>
-                <Container className="w-35 block-example border border-dark rounded shadow-lg p-5">
+                <Container className="w-10 block-example border border-dark rounded shadow-lg p-5 text-center" id="bio">
 
-                <Container className="d-flex justify-content-around mt-5 profileheader">
+                <Container className="d-flex justify-content-around mt-5 profileheader text-center" id="bio">
                 {this.props.name} | {this.props.age} | {this.props.city}
 
             </Container>
 
             <img
-            className="d-block w-100 p-5"
+            className="d-block w-10 p-5 text-center"
             src= {this.props.src1}
             alt="First slide"
+            height= "500"
+            class="center"
             />
 
-            <Container className="bio">
+            <Container className="bio text-center" id="center" >
                 <Col>
                     <ul className="rightbody">
-                        <li class="b1">
+                        <li class="b1" >
                         {this.props.gender} | {this.props.orientation} | {this.props.relationships}
                         </li>
 

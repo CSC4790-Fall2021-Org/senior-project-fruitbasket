@@ -37,40 +37,40 @@ class ExploreGroup extends React.Component {
         </Container>
         <div className="rows">
             <BasketProfile 
-                name="Thomas Jefferson"
+                name="Thomas Adams"
                 age= '28'
-                city= 'France'
-                selfSummary= 'Thomas Jefferson is coming home'
-                src1= {jefferson}
-                gender="Neutral"
+                city= 'San Francisco, CA'
+                selfSummary= 'I work in the tech industry'
+                src1= {"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}
+                gender="Bigender"
                 orientation= "Queer"
                 relationships= "Polyamorous"
-                looking= "No comittments"
-                facts="cast of hamilton"
+                looking= "A nice group of peopl"
+                facts="I have two dogs"
             ></BasketProfile>
             <BasketProfile 
-                name="George Washington"
+                name="John Washington"
                 age= "32"
-                city="Richmond"
-                selfSummary="I am the only reason America exists"
-                src1 = {washington}
+                city="Richmond, VA"
+                selfSummary="I work as a doctor"
+                src1 = {"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}
                 gender = "Male"
                 orientation = "Straight"
                 relationships="Polyamorous"
-                looking= "Something for the side"
-                facts="The capital is named after me"
+                looking= "Someone I share interests with"
+                facts="I have a lizard"
             ></BasketProfile>
             <BasketProfile 
-                name="John Adams" 
+                name="George Jefferson" 
                 age= '52'
-                city= 'Outer space'
-                selfSummary= 'My name is John and I have a son named John'
-                src1= {adams}
-                gender="alien"
-                orientation="Male"
+                city= 'New York, NY'
+                selfSummary= 'I work as a banker'
+                src1= {"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}
+                gender="Male"
+                orientation="Bisexual"
                 relationships="Polyamorous"
                 looking="Someone to get old with"
-                facts="Balding"
+                facts="I have chihuahua"
             ></BasketProfile>
         </div>
         </>

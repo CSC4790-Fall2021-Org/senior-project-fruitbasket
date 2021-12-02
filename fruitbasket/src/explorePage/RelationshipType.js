@@ -4,22 +4,11 @@ import "./RelationshipType.css";
 export const types = [
     { name: "Women" },
     { name: "Men" },
-    { name: "Couples" },
-    { name: "Group" },
+    { name: "Man + Woman couple" },
     { name: "Gender Fluid" },
     { name: "Pangender" },
     { name: "Non-binary" },
-    { name: "Friendship" },
-    { name: "Casual" },
-    { name: "Serious" },
-    { name: "Friends with benefits" },
-    { name: "Monogamous" },
-    { name: "Debauch" },
-    { name: "Rebound" },
-    { name: "Pet sitter" },
-    { name: "Chef" },
-    { name: "Pick-up basketball" },
-    { name: "Fitchecks" }
+    { name: "Androgynous" },
   ];
 const RelationshipType = () => {
   const [checkedState, setCheckedState] = useState(
