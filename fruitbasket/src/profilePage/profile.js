@@ -98,19 +98,19 @@ class Profile extends Component {
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> SRC1 </h3>
-                <img src={profile.src1} />
+                <img height="500px" src={profile.src1} />
               </Card>
             </div>
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> SRC2 </h3>
-                <img src={profile.src1} />
+                <img height="500px" src={profile.src2} />
               </Card>
             </div>
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> SRC3 </h3>
-                <img src={profile.src3} />
+                <img  height="500px"src={profile.src3} />
               </Card>
             </div>
           </Row>
