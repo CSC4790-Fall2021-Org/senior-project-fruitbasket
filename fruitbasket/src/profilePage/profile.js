@@ -56,7 +56,7 @@ class Profile extends Component {
     const { userids } = this.state;
     return (
       <>
-        <Dropdown className = "text-center large">
+        <Dropdown className = "text-center pt-5">
           <Dropdown.Toggle id="dropdown-basic">
             {this.state.dropDownValue}
           </Dropdown.Toggle>
