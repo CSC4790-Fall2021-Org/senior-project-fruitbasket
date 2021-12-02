@@ -26,21 +26,14 @@ class Profile extends Component {
     this.setState({ currentid: text });
   }
 
-  putValue(val)
-  {
-      const username = { userName: 'test put request' };
-      axios.put('https://fruitbasketapi20211021012825.azurewebsites.net/api/users', username)
-  }
-
   componentDidMount() {
     const url =
-      "https://fruitbasketapi20211021012825.azurewebsites.net/api/users";
+      "https://fruitbasketapi20211202024943.azurewebsites.net/api/users";
     axios
       .get(url)
       .then((response) => response.data)
       .then((data) => {
         this.setState({ allprofiles: data });
-        this.setState({ username: data[0].userName });
         this.setState({ profile: data[0] });
         this.setState({ userids: data.map((data) => data.users_ID) });
 
@@ -56,10 +49,9 @@ class Profile extends Component {
   render() {
     const { profile } = this.state;
     const { userids } = this.state;
-    const { username } = this.state;
     return (
       <>
-        <Dropdown>
+        <Dropdown className = "text-center large">
           <Dropdown.Toggle id="dropdown-basic">
             {this.state.dropDownValue}
           </Dropdown.Toggle>
@@ -75,61 +67,94 @@ class Profile extends Component {
           </Dropdown.Menu>
         </Dropdown>
 
-        <div className="text-center m-5">
-          <h1 class="text-center">{profile.name}</h1>
-          <Image
-            className="text-center rounded border border-dark"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIGa9vRdOR3iuiRI9taJagM8cr-y2LhntDw&usqp=CAU"
-          ></Image>
-        </div>
-        <div className="container-fluid text-center">
+        <div className="container-fluid text-center pt-5">
           <Row>
-
+            <div className="col-md-2">
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> User ID </h3>
+                <h3> {profile.users_ID}</h3>
+              </Card>
+            </div>
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Username </h3>
-                <h3>{username} </h3>
-                <Form>
-                  <input></input>
-                  <Button 
-                  onClick={(e) => this.putValue(e.target.textContent)}>
-                  update
-                  </Button>
-
-                </Form>
+                <h3> {profile.users_Name} </h3>
               </Card>
             </div>
+            <div className="col-md-2">
+            </div>
+          </Row>
+        </div>
 
+        <div className="container-fluid text-center pt-5">
+          <Row>
             <div className="col-md-4">
               <Card className="text-center">
-                <h3> Phone Number </h3>
-                <h3>{profile.phone_Number} </h3>
-                <Form>
-                  <input></input>
-                  <Button>update</Button>
-                </Form>
+                <h3> SRC1 </h3>
+                <img src={profile.src1} />
               </Card>
             </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> SRC2 </h3>
+                <img src={profile.src1} />
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> SRC3 </h3>
+                <img src={profile.src3} />
+              </Card>
+            </div>
+          </Row>
+        </div>
+
+        <div className="container-fluid text-center pt-5">
+          <Row>
             <div className="col-md-4">
               <Card className="text-center">
                 <h3> Age </h3>
                 <h3>{profile.age} </h3>
-                <Form>
-                  <input></input>
-                  <Button>update</Button>
-                </Form>
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> City </h3>
+                <h3>{profile.city} </h3>
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> Doing </h3>
+                <h3>{profile.doing} </h3>
               </Card>
             </div>
           </Row>
+        </div>
 
-          <Card className="m-5">
-            <h1> BIO</h1>
-            <p>{profile.bio}</p>
-            <Form>
-              <input></input>
-              <Button>update</Button>
-            </Form>
-          </Card>
+        <div className="container-fluid text-center pt-5">
+          <Row>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> Good At </h3>
+                <h3>{profile.good_At} </h3>
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> Self Summary </h3>
+                <h3>{profile.self_Summary} </h3>
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> Style </h3>
+                <h3>{profile.style} </h3>
+              </Card>
+            </div>
+          </Row>
         </div>
       </>
     );
