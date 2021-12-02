@@ -27,7 +27,7 @@ class Profile extends Component {
     })
     .then((response) => response.data)
     .then((data) => {
-        this.setState({ profile: data[text] });
+        this.setState({ profile: data[text-1] });
     })
   }
 
