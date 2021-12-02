@@ -92,30 +92,6 @@ class Profile extends Component {
             </div>
           </Row>
         </div>
-
-        <div className="container-fluid text-center pt-5">
-          <Row>
-            <div className="col-md-4">
-              <Card className="text-center">
-                <h3> SRC1 </h3>
-                <img height="500px" src={profile.src1} />
-              </Card>
-            </div>
-            <div className="col-md-4">
-              <Card className="text-center">
-                <h3> SRC2 </h3>
-                <img height="500px" src={profile.src2} />
-              </Card>
-            </div>
-            <div className="col-md-4">
-              <Card className="text-center">
-                <h3> SRC3 </h3>
-                <img  height="500px"src={profile.src3} />
-              </Card>
-            </div>
-          </Row>
-        </div>
-
         <div className="container-fluid text-center pt-5">
           <Row>
             <div className="col-md-4">
@@ -157,6 +133,29 @@ class Profile extends Component {
               <Card className="text-center">
                 <h3> Style </h3>
                 <h3>{profile.style} </h3>
+              </Card>
+            </div>
+          </Row>
+        </div>
+
+        <div className="container-fluid text-center pt-5">
+          <Row>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> SRC1 </h3>
+                <img height="500px" src={profile.src1} />
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> SRC2 </h3>
+                <img height="500px" src={profile.src2} />
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> SRC3 </h3>
+                <img  height="500px"src={profile.src3} />
               </Card>
             </div>
           </Row>
