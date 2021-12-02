@@ -26,10 +26,12 @@ class Profile extends Component {
     this.setState({ currentid: text });
   }
 
-  putValue(val)
-  {
-      const username = { userName: 'test put request' };
-      axios.put('https://fruitbasketapi20211202024943.azurewebsites.net/api/users', username)
+  putValue(val) {
+    const username = { userName: "test put request" };
+    axios.put(
+      "https://fruitbasketapi20211202024943.azurewebsites.net/api/users",
+      username
+    );
   }
 
   componentDidMount() {
@@ -75,15 +77,30 @@ class Profile extends Component {
           </Dropdown.Menu>
         </Dropdown>
 
-        <div className="text-center m-5">
-          <h1 class="text-center">{profile.name}</h1>
-          <Image
-            className="text-center rounded border border-dark"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIGa9vRdOR3iuiRI9taJagM8cr-y2LhntDw&usqp=CAU"
-          ></Image>
+        <div className="container-fluid text-center pt-5">
+          <Row>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> SRC1 </h3>
+                <img src={profile.src1} />
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> SRC2 </h3>
+                <img src={profile.src1} />
+              </Card>
+            </div>
+            <div className="col-md-4">
+              <Card className="text-center">
+                <h3> SRC3 </h3>
+                <img src={profile.src3} />
+              </Card>
+            </div>
+          </Row>
         </div>
 
-        <div className="container-fluid text-center">
+        <div className="container-fluid text-center pt-5">
           <Row>
             <div className="col-md-4">
               <Card className="text-center">
