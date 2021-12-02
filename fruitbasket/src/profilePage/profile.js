@@ -26,14 +26,6 @@ class Profile extends Component {
     this.setState({ currentid: text });
   }
 
-  putValue(val) {
-    const username = { userName: "test put request" };
-    axios.put(
-      "https://fruitbasketapi20211202024943.azurewebsites.net/api/users",
-      username
-    );
-  }
-
   componentDidMount() {
     const url =
       "https://fruitbasketapi20211202024943.azurewebsites.net/api/users";
@@ -42,7 +34,6 @@ class Profile extends Component {
       .then((response) => response.data)
       .then((data) => {
         this.setState({ allprofiles: data });
-        this.setState({ username: data[0].users_Name });
         this.setState({ profile: data[0] });
         this.setState({ userids: data.map((data) => data.users_ID) });
 
@@ -58,10 +49,9 @@ class Profile extends Component {
   render() {
     const { profile } = this.state;
     const { userids } = this.state;
-    const { username } = this.state;
     return (
       <>
-        <Dropdown>
+        <Dropdown className = "text-center large">
           <Dropdown.Toggle id="dropdown-basic">
             {this.state.dropDownValue}
           </Dropdown.Toggle>
@@ -89,7 +79,7 @@ class Profile extends Component {
             </div>
             <div className="col-md-4">
               <Card className="text-center">
-                <h3> SRC2 </h3>
+                <h3> Username </h3>
                 <h3> {profile.users_Name} </h3>
               </Card>
             </div>
