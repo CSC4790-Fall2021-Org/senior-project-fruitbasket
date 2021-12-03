@@ -67,13 +67,14 @@ class ExploreGroup extends React.Component {
             name1 : response.data.baskets_Name,
             age1 : response.data.age,
             city1 : response.data.city,
+            src1 : response.data.src1,
             selfSummary1 : response.data.selfSummary,
             gender1 : response.data.gender,
             orientation1 : response.data.orientation,
             relationships1 : response.relationships,
             looking1: response.data.looking,
             facts1: response.data.facts,
-          }, () => console.log(this.state.id1))
+          }, () => console.log(this.state.relationships1))
         })
 
         const url2 = 'https://fruitbasketapi20211202024943.azurewebsites.net/api/baskets/'+(this.state.id2+1);
@@ -85,31 +86,33 @@ class ExploreGroup extends React.Component {
             name2 : response2.data.baskets_Name,
             age2 : response2.data.age,
             city2 : response2.data.city,
+            src2 : response2.data.src1,
             selfSummary2 : response2.data.selfSummary,
             gender2 : response2.data.gender,
             orientation2 : response2.data.orientation,
             relationships2 : response2.relationships,
             looking2: response2.data.looking,
             facts2: response2.data.facts,
-          }, () => console.log(this.state.id2))
+          }, () => console.log(this.state.relationships2))
         })
 
         const url3 = 'https://fruitbasketapi20211202024943.azurewebsites.net/api/baskets/'+(this.state.id3+1);
         axios.get(url3, {
         })
-        .then((response) => {
+        .then((response3) => {
           this.setState({
-            id3: response.data.baskets_ID,
-            name3 : response.data.baskets_Name,
-            age3 : response.data.age,
-            city3 : response.data.city,
-            selfSummary3 : response.data.selfSummary,
-            gender3 : response.data.gender,
-            orientation3 : response.data.orientation,
-            relationships3 : response.relationships,
-            looking3: response.data.looking,
-            facts3: response.data.facts,
-          }, () => console.log(this.state.id3))
+            id3: response3.data.baskets_ID,
+            name3 : response3.data.baskets_Name,
+            age3 : response3.data.age,
+            city3 : response3.data.city,
+            src3 : response3.data.src1,
+            selfSummary3 : response3.data.selfSummary,
+            gender3 : response3.data.gender,
+            orientation3 : response3.data.orientation,
+            relationships3 : response3.relationships,
+            looking3: response3.data.looking,
+            facts3: response3.data.facts,
+          }, () => console.log(response3.relationships))
         })
      };
      render() {
